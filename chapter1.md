@@ -1,23 +1,23 @@
 ---
-title       : Insert the chapter title here
-description : Insert the chapter description here
-attachments :
-  slides_link : https://s3.amazonaws.com/assets.datacamp.com/course/teach/slides_example.pdf
-
+title: 'This is my first chapter try'
+description: 'Seems complicated, but let''s do it'
+attachments:
+    slides_link: 'https://s3.amazonaws.com/assets.datacamp.com/course/teach/slides_example.pdf'
 ---
+
 ## A really bad movie
 
 ```yaml
 type: MultipleChoiceExercise
+key: 7f79456e6b
 lang: r
 xp: 50
 skills: 1
-key: 7f79456e6b
 ```
 
 Have a look at the plot that showed up in the viewer to the right. Which type of movie has the worst rating assigned to it?
 
-`@instructions`
+`@possible_answers`
 - Adventure
 - Action
 - Animation
@@ -48,14 +48,15 @@ test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 ```
 
 ---
+
 ## More movies
 
 ```yaml
 type: NormalExercise
+key: db074e2b1a
 lang: r
 xp: 100
 skills: 1
-key: db074e2b1a
 ```
 
 In the previous exercise, you saw a dataset about movies. In this exercise, we'll have a look at yet another dataset about movies!
@@ -127,4 +128,42 @@ test_function("plot", args = "col")
 test_error()
 
 success_msg("Good work!")
+```
+
+---
+
+## Insert exercise title here
+
+```yaml
+type: NormalExercise
+key: 235b556661
+xp: 100
+```
+
+
+
+`@instructions`
+
+
+`@hint`
+
+
+`@pre_exercise_code`
+```{r}
+
+```
+
+`@sample_code`
+```{r}
+
+```
+
+`@solution`
+```{r}
+
+```
+
+`@sct`
+```{r}
+
 ```
