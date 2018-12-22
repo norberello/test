@@ -134,14 +134,16 @@ key: b677215360
 xp: 50
 ```
 
-Alkohola nahaste(AUD, N = 4.390) helduen lagin nazionala aztertu dugu 2006ko Droga-erabileraren eta Osasunaren Nazioarteko Inkestatik (NSDUH). 
+Akohola arazoak dauzkaten 4262 helduez osatuta dagoen lagin bat daukazu non pertsona bakoitza, justiziak aginduta, alkohola tratamendu batean dagoen ala ez eta zenbat aldiz (behin edo birritan) atxilotuta izan den azkenego urtean ezaguna den. Chi karratua egin aukera zuzena adierazteko:
 
 
 `@possible_answers`
-
+- Alkohola tratamendua eta atxilotuta izatearekin ez dago lotura esanguratsurik 
+- Alkohola tratamendua eta atxilotuta izatearekin lotura esanguratsua dago
+- Testak ez du neurtzen alcohola tratamendua eta atxilotuta izatearekiko erlazioa
 
 `@hint`
-
+ezin da errazagoa izan, pentsatu!
 
 `@pre_exercise_code`
 ```{r}
@@ -150,12 +152,15 @@ alk.taula <- data.frame(alk.trat=c(174,119,61),
                         trat.ez=c(3446,309,153),
                           row.names = c("inoiz ez","behin","birritan"))
 print(alk.taula)
-
+#chi karratua egin:
+chisq.test(__________)
 ```
 
 `@sct`
 ```{r}
-
+msg_bad <- "ez da zuzena!"
+msg_success <- "Bai! Badirudi hartzen ari zarela"
+test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 ```
 
 ---
