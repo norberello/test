@@ -1,8 +1,85 @@
 ---
-title: 'This is my first chapter try'
-description: 'Seems complicated, but let''s do it'
+title: 'Ikastaroaren lehenengo gaia'
+description: 'Euki fedea, dena posiblea da programazioan'
 attachments:
     slides_link: 'https://s3.amazonaws.com/assets.datacamp.com/course/teach/slides_example.pdf'
+---
+
+## Galdera bat
+
+```yaml
+type: MultipleChoiceExercise
+key: d7b23bb131
+xp: 50
+```
+
+Aukeratu zentro joerako neurri bat
+
+`@possible_answers`
+1. [batezbetekoa]
+2. desbiderapen tipikoa
+3. F estatistikoa
+4. kurtosia
+
+`@hint`
+pentsatu pixkat, oso erraza da eta!
+
+`@pre_exercise_code`
+```{r}
+
+```
+
+`@sct`
+```{r}
+msg_bad <- "ez, pentsatu pixkat, oso erraza da"
+msg_success <- "oso ondo!"
+test_mc(correct = 1, feedback_msgs = c(msg_success,msg_bad,msg_bad, msg_bad))
+```
+
+---
+
+## Hau da izenburua
+
+```yaml
+type: NormalExercise
+key: 235b556661
+xp: 100
+```
+
+Baztesbestekoa kalkulatzen da zorizko aldagai baten zentro joera kalkulatzeko. Ariketa honetan ikasiko duzu aldagai baten datuak sartzen eta gero bere batezbeskoa kalkulatzen.
+
+`@instructions`
+Sartu altueraren bektorea modu honetan
+altuera<-c(1.6,1.9,1.6,1.6)
+
+`@hint`
+gogoratu batezbestekoaren komandoa mean dela eta aldagaia parentesisen artean jarri behar dela
+
+>
+
+`@pre_exercise_code`
+```{r}
+altuera<-c(1.6,1.9,1.6,1.6)
+#hau da zerbait lehenago sartu nahi baduzu, baina ez da ikusten
+```
+
+`@sample_code`
+```{r}
+altuera<-c(1.6,1.9,1.6,1.6)
+#kalkulatu altueraren batazbestekoa
+
+```
+
+`@solution`
+```{r}
+mean(altuera)
+```
+
+`@sct`
+```{r}
+
+```
+
 ---
 
 ## A really bad movie
@@ -128,81 +205,4 @@ test_function("plot", args = "col")
 test_error()
 
 success_msg("Good work!")
-```
-
----
-
-## Hau da izenburua
-
-```yaml
-type: NormalExercise
-key: 235b556661
-xp: 100
-```
-
-Baztesbestekoa kalkulatzen da zorizko aldagai baten zentro joera kalkulatzeko. Ariketa honetan ikasiko duzu aldagai baten datuak sartzen eta gero bere batezbeskoa kalkulatzen.
-
-`@instructions`
-Sartu altueraren bektorea modu honetan
-altuera<-c(1.6,1.9,1.6,1.6)
-
-`@hint`
-gogoratu batezbestekoaren komandoa mean dela eta aldagaia parentesisen artean jarri behar dela
-
->
-
-`@pre_exercise_code`
-```{r}
-altuera<-c(1.6,1.9,1.6,1.6)
-#hau da zerbait lehenago sartu nahi baduzu, baina ez da ikusten
-```
-
-`@sample_code`
-```{r}
-altuera<-c(1.6,1.9,1.6,1.6)
-#kalkulatu altueraren batazbestekoa
-
-```
-
-`@solution`
-```{r}
-mean(altuera)
-```
-
-`@sct`
-```{r}
-
-```
-
----
-
-## Galdera bat
-
-```yaml
-type: MultipleChoiceExercise
-key: d7b23bb131
-xp: 50
-```
-
-Zer da zentro joerako neurri bat?
-
-`@possible_answers`
-1. [batezbetekoa]
-2. desbiderapen tipikoa
-3. F estatistikoa
-4. kurtosia
-
-`@hint`
-pentsatu pixkat, oso erraza da eta!
-
-`@pre_exercise_code`
-```{r}
-
-```
-
-`@sct`
-```{r}
-msg_bad <- "ez, pentsatu pixkat, oso erraza da"
-msg_success <- "oso ondo!"
-test_mc(correct = 1, feedback_msgs = c(msg_success,msg_bad,msg_bad, msg_bad))
 ```
