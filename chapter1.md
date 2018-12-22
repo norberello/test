@@ -16,7 +16,7 @@ xp: 50
 Aukeratu zentro joerako neurri bat
 
 `@possible_answers`
-1. [batezbetekoa]
+1. [batezbestekoa]
 2. desbiderapen tipikoa
 3. F estatistikoa
 4. kurtosia
