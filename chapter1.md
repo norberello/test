@@ -160,7 +160,7 @@ chisq.test(__________)
 ```{r}
 msg_bad <- "ez da zuzena!"
 msg_success <- "Bai! Badirudi hartzen ari zarela"
-test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
+test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad))
 ```
 
 ---
