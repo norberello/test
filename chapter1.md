@@ -184,7 +184,7 @@ alk.datoak<-data.frame(alkohol,sex)
 ```yaml
 type: NormalExercise
 key: 3799eb2e21
-xp: 100
+xp: 50
 ```
 
 `@instructions`
@@ -204,6 +204,35 @@ boxplot(_______~sex,data=_____,
 ```{r}
 boxplot(alkohol~sex,data=alk.datoak,
         ylab="edari kopurua",xlab="sex",main="generoen arteko alkohol kontsumoa")
+```
+
+`@sct`
+```{r}
+
+```
+
+***
+
+```yaml
+type: NormalExercise
+key: da48547f16
+xp: 50
+```
+
+`@instructions`
+Orain egin t-test bat jakiteko edari kopurua ezberdina den ala ez sexuen artean
+
+`@hint`
+menpeko aldagaia eta aldagai askeak idatzi
+
+`@sample_code`
+```{r}
+wilcox.test(______~_______,data=alk.datoak)
+```
+
+`@solution`
+```{r}
+wilcox.test(alkohol~sex,data=alk.datoak)
 ```
 
 `@sct`
