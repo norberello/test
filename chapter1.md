@@ -147,8 +147,7 @@ ezin da errazagoa izan, pentsatu!
 
 `@pre_exercise_code`
 ```{r}
-alk.taula <- data.frame(alk.trat=c(174,119,61), 
-                          alk.trat.beh= c(85,20,23),
+alk.taula <- data.frame(alk.trat=c(174,119,61),alk.trat.beh= c(85,20,23),
                         trat.ez=c(3446,309,153),
                           row.names = c("inoiz ez","behin","birritan"))
 print(alk.taula)
