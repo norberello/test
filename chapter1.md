@@ -193,7 +193,7 @@ Zer da zentro joerako neurri bat?
 4. kurtosia
 
 `@hint`
-pentsatu pixkat, oso erraza da
+pentsatu pixkat, oso erraza da eta!
 
 `@pre_exercise_code`
 ```{r}
