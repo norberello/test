@@ -154,11 +154,13 @@ gogoratu batezbestekoaren komandoa mean dela eta aldagaia parentesisen artean ja
 `@pre_exercise_code`
 ```{r}
 altuera<-c(1.6,1.9,1.6,1.6)
-#kalkulatu altueraren batazbestekoa
+#hau da zerbait lehenago sartu nahi baduzu, baina ez da ikusten
 ```
 
 `@sample_code`
 ```{r}
+altuera<-c(1.6,1.9,1.6,1.6)
+#kalkulatu altueraren batazbestekoa
 
 ```
 
