@@ -184,17 +184,17 @@ key: 224b3b365e
 xp: 50
 ```
 
-Zein da altueraren batazbestekoa?
+Zein da "altuera" bektorearen batazbestekoa?
 
 `@possible_answers`
--1.8
--1.9
--1.7
--3
--1.6
+1. - 1.8
+2. - [1.9]
+3. - 1.3
+4. - 1
+5. - 2
 
 `@hint`
-erabili "mean" kodigoa
+erabili "mean" kodigoa eta altuera partesisen artean
 
 `@pre_exercise_code`
 ```{r}
