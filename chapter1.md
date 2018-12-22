@@ -162,6 +162,57 @@ test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad))
 
 ---
 
+## alkohola eta sexua
+
+```yaml
+type: TabExercise
+key: 66c9d1533c
+xp: 100
+```
+
+Kontsumoari dagokionez genero desberdintasunak ote dauden aztertu nahi dugu batez bestekoen arteko konparaketa bidez. Esanguratsua al da emakumezkoek eta gizonezkoek hartutako edari kopuruaren arteko desberdintasuna? 
+
+`@pre_exercise_code`
+```{r}
+alkohol<-c(0,0,1,1,2,0,6,7,15,9,2,4,0,0)
+sex<-c(rep("emakume",6),rep("gizon",8))
+alk.datoak<-data.frame(alkohol,sex)
+```
+
+***
+
+```yaml
+type: NormalExercise
+key: 3799eb2e21
+xp: 100
+```
+
+`@instructions`
+Marraztu datuak kutxa diagrama batean boxplot erabilita
+
+`@hint`
+jarri parentesisen barruan irizpide aldagaia
+
+`@sample_code`
+```{r}
+print(alk.datoak)
+boxplot(_______~sex,data=_____,
+        ylab="edari kopurua",xlab="sex",main="generoen arteko alkohol kontsumoa")
+```
+
+`@solution`
+```{r}
+boxplot(alkohol~sex,data=alk.datoak,
+        ylab="edari kopurua",xlab="sex",main="generoen arteko alkohol kontsumoa")
+```
+
+`@sct`
+```{r}
+
+```
+
+---
+
 ## More movies
 
 ```yaml
