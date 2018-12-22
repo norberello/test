@@ -188,6 +188,8 @@ Zein da "altuera" bektorearen batazbestekoa?
 
 `@possible_answers`
 `mean(altuera)`
+1.9
+1.90
 
 `@hint`
 erabili "mean" kodigoa eta altuera partesisen artean
