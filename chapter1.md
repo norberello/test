@@ -187,9 +187,10 @@ xp: 50
 Zein da "altuera" bektorearen batazbestekoa?
 
 `@possible_answers`
-`mean(altuera)`
-1.9
-1.90
+- 1.5
+- 1.9
+- Animation
+- fuck
 
 `@hint`
 erabili "mean" kodigoa eta altuera partesisen artean
