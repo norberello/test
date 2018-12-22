@@ -132,7 +132,7 @@ success_msg("Good work!")
 
 ---
 
-## Insert exercise title here
+## Hau da izenburua
 
 ```yaml
 type: NormalExercise
@@ -167,6 +167,37 @@ altuera<-c(1.6,1.9,1.6,1.6)
 `@solution`
 ```{r}
 mean(altuera)
+```
+
+`@sct`
+```{r}
+
+```
+
+---
+
+## Insert exercise title here
+
+```yaml
+type: MultipleChoiceExercise
+key: d7b23bb131
+xp: 50
+```
+
+Zer da zentro joerako neurri bat?
+
+`@possible_answers`
+1. [batezbetekoa]
+2. desbiderapen tipikoa
+3. F estatistikoa
+4. kurtosia
+
+`@hint`
+pentsatu pixkat, oso erraza da
+
+`@pre_exercise_code`
+```{r}
+
 ```
 
 `@sct`
