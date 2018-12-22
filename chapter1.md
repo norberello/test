@@ -126,6 +126,40 @@ test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 
 ---
 
+## Chi karratua
+
+```yaml
+type: MultipleChoiceExercise
+key: b677215360
+xp: 50
+```
+
+Alkohola nahaste(AUD, N = 4.390) helduen lagin nazionala aztertu dugu 2006ko Droga-erabileraren eta Osasunaren Nazioarteko Inkestatik (NSDUH). 
+
+
+`@possible_answers`
+
+
+`@hint`
+
+
+`@pre_exercise_code`
+```{r}
+alk.taula <- data.frame(alk.trat=c(174,119,61), 
+                          alk.trat.beh= c(85,20,23),
+                        trat.ez=c(3446,309,153),
+                          row.names = c("inoiz ez","behin","birritan"))
+print(alk.taula)
+
+```
+
+`@sct`
+```{r}
+
+```
+
+---
+
 ## More movies
 
 ```yaml
