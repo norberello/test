@@ -140,7 +140,7 @@ Akohola arazoak dauzkaten 4262 helduez osatuta dagoen lagin bat daukazu non pert
 `@possible_answers`
 - [Alkohola tratamendua eta atxilotuta izatearekin ez dago lotura esanguratsurik] 
 - Alkohola tratamendua eta atxilotuta izatearekin lotura esanguratsua dago
-- Testak ez du neurtzen alkohola tratamendua eta atxilotuta izatearekiko erlazioa
+- Testak ez du neurtzen alcohola tratamendua eta atxilotuta izatearekiko erlazioa
 
 `@hint`
 ezin da errazagoa izan, pentsatu!
