@@ -171,7 +171,7 @@ key: 66c9d1533c
 xp: 100
 ```
 
-Kontsumoari dagokionez genero desberdintasunak ote dauden aztertu nahi dugu batez bestekoen arteko konparaketa bidez. Esanguratsua al da emakumezkoek eta gizonezkoek hartutako edari kopuruaren arteko desberdintasuna? 
+Alkohol Kontsumoaren genero desberdintasunak ote dauden aztertu nahi dugu batez bestekoen arteko konparaketa bidez. Esanguratsua al da emakumezkoek eta gizonezkoek hartutako edari kopuruaren arteko desberdintasuna? 
 
 `@pre_exercise_code`
 ```{r}
