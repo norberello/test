@@ -132,7 +132,7 @@ success_msg("Good work!")
 
 ---
 
-## Galdera erraza
+## Hau da izenburua
 
 ```yaml
 type: NormalExercise
@@ -147,7 +147,7 @@ Sartu altueraren bektorea modu honetan
 altuera<-c(1.6,1.9,1.6,1.6)
 
 `@hint`
-gogoratu batezbestekoaren komandoa "mean" dela eta aldagaia parentesisen artean jarri behar dela
+gogoratu batezbestekoaren komandoa mean dela eta aldagaia parentesisen artean jarri behar dela
 
 >
 
@@ -176,35 +176,33 @@ mean(altuera)
 
 ---
 
-## Eskatu R-ri erantzuna
+## Galdera bat
 
 ```yaml
 type: MultipleChoiceExercise
-key: 224b3b365e
+key: d7b23bb131
 xp: 50
 ```
 
-Zein da "altuera" bektorearen batazbestekoa?
+Zer da zentro joerako neurri bat?
 
 `@possible_answers`
-- 1.5
-- 1.9
-- Animation
-- fuck
+1. [batezbetekoa]
+2. desbiderapen tipikoa
+3. F estatistikoa
+4. kurtosia
 
 `@hint`
-erabili "mean" kodigoa eta altuera partesisen artean
+pentsatu pixkat, oso erraza da
 
 `@pre_exercise_code`
 ```{r}
-altuera<-c(1.9,1.9,1.9)
+
 ```
 
 `@sct`
 ```{r}
-# SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
-
-msg_bad <- "barkatu, baina ez duzu ondo egin"
-msg_success <- "oso ondo"
+msg_bad <- "ez, pentsatu pixkat, oso erraza da"
+msg_success <- "oso ondo!"
 test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 ```
