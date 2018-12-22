@@ -140,17 +140,21 @@ key: 235b556661
 xp: 100
 ```
 
-
+Baztesbestekoa kalkulatzen da zorizko aldagai baten zentro joera kalkulatzeko. Ariketa honetan ikasiko duzu aldagai baten datuak sartzen eta gero bere batezbeskoa kalkulatzen.
 
 `@instructions`
-
+Sartu altueraren bektorea modu honetan
+altuera<-c(1.6,1.9,1.6,1.6)
 
 `@hint`
+mean()
 
+>
 
 `@pre_exercise_code`
 ```{r}
-
+altuera<-c(1.6,1.9,1.6,1.6)
+#kalkulatu altueraren batazbestekoa
 ```
 
 `@sample_code`
@@ -160,7 +164,7 @@ xp: 100
 
 `@solution`
 ```{r}
-
+mean(altuera)
 ```
 
 `@sct`
