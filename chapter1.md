@@ -147,7 +147,7 @@ Sartu altueraren bektorea modu honetan
 altuera<-c(1.6,1.9,1.6,1.6)
 
 `@hint`
-mean()
+gogoratu batezbestekoaren komandoa mean dela eta aldagaia parentesisen artean jarri behar dela
 
 >
 
