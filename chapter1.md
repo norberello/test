@@ -132,7 +132,7 @@ success_msg("Good work!")
 
 ---
 
-## Hau da izenburua
+## Galdera erraza
 
 ```yaml
 type: NormalExercise
@@ -176,33 +176,36 @@ mean(altuera)
 
 ---
 
-## Galdera bat
+## Eskatu R-ri erantzuna
 
 ```yaml
 type: MultipleChoiceExercise
-key: d7b23bb131
+key: 224b3b365e
 xp: 50
 ```
 
-Zer da zentro joerako neurri bat?
+Zein da altueraren batazbestekoa?
 
 `@possible_answers`
-1. [batezbetekoa]
-2. desbiderapen tipikoa
-3. F estatistikoa
-4. kurtosia
+-1.8
+-1.9
+-1.7
+-3
+-1.6
 
 `@hint`
-pentsatu pixkat, oso erraza da
+erabili "mean" kodigoa
 
 `@pre_exercise_code`
 ```{r}
-
+altuera<-c(1.9,1.9,1.9)
 ```
 
 `@sct`
 ```{r}
-msg_bad <- "ez, pentsatu pixkat, oso erraza da"
-msg_success <- "oso ondo!"
-test_mc(correct = 1, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
+# SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
+
+msg_bad <- "barkatu, baina ez duzu ondo egin"
+msg_success <- "oso ondo"
+test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 ```
