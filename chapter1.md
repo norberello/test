@@ -344,5 +344,6 @@ wilcox.test(alkohol~sex,data=alk.datoak)
 
 `@sct`
 ```{r}
-
+msg_bad <- "ez, zerbait ez duzu ondo egin! Erabili head(alk.datoak) aldagaiak ondo idazteko"
+success_msg("Oso ondo!")
 ```
