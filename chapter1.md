@@ -93,6 +93,11 @@ A dataset with a selection of movies, `movie_selection`, is available in the wor
 load(url("https://s3.amazonaws.com/assets.datacamp.com/course/teach/movies.RData"))
 movie_selection <- Movies[Movies$Genre %in% c("action", "animated", "comedy"), c("Genre", "Rating", "Run")]
 
+delituak
+#load(url("https://assets.datacamp.com/production/repositories/2196/datasets/d09c6c419e110e33701d755304971f44a0049b41/Delitu-indizea.csv"))
+
+
+
 # Clean up the environment
 rm(Movies)
 ```
