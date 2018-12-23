@@ -192,11 +192,12 @@ key: 235b556661
 xp: 100
 ```
 
-Baztesbestekoa kalkulatzen da zorizko aldagai baten zentro joera kalkulatzeko. Ariketa honetan ikasiko duzu aldagai baten datuak sartzen eta gero bere batezbeskoa kalkulatzen.
+Baztesbestekoa zentro joerako neurririk amankomunena da. Ariketa honetan ikasiko duzu aldagai baten datuak sartzen eta gero bere batezbeskoa kalkulatzen.
 
 `@instructions`
-Sartu altueraren bektorea modu honetan
+Sartu 4 pertsonen altuerak altuera izeneko "objetu" batean honela:
 `altuera<-c(1.6,1.9,1.6,1.6)`
+Kalkulatu batezbestekoa
 
 `@hint`
 gogoratu batezbestekoaren komandoa `mean()` dela eta aldagaia parentesisen artean jarri behar dela
@@ -205,13 +206,13 @@ gogoratu batezbestekoaren komandoa `mean()` dela eta aldagaia parentesisen artea
 
 `@pre_exercise_code`
 ```{r}
-altuera<-c(1.6,1.9,1.6,1.6)
-#hau da zerbait lehenago sartu nahi baduzu, baina ez da ikusten
+
+
 ```
 
 `@sample_code`
 ```{r}
-altuera<-c(1.6,1.9,1.6,1.6)
+altuera<-c(___,___,___,___)
 #kalkulatu altueraren batazbestekoa
 
 ```
