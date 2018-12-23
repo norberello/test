@@ -196,8 +196,8 @@ Baztesbestekoa zentro joerako neurririk amankomunena da. Ariketa honetan ikasiko
 
 `@instructions`
 Sartu 4 pertsonen altuerak altuera izeneko "objetu" batean honela:
-`altuera<-c(1.6,1.9,1.6,1.6)`
-Kalkulatu batezbestekoa
+`altuera<-c(1.6,1.9,1.6,1.6)`.
+Kalkulatu batezbestekoa behar den komanduarekin.
 
 `@hint`
 gogoratu batezbestekoaren komandoa `mean()` dela eta aldagaia parentesisen artean jarri behar dela
