@@ -184,7 +184,7 @@ test_mc(correct = 1, feedback_msgs = c(msg_success,msg_bad,msg_bad, msg_bad))
 
 ---
 
-## Hau da izenburua
+## Altueraren batezbestekoa
 
 ```yaml
 type: NormalExercise
@@ -196,10 +196,10 @@ Baztesbestekoa kalkulatzen da zorizko aldagai baten zentro joera kalkulatzeko. A
 
 `@instructions`
 Sartu altueraren bektorea modu honetan
-altuera<-c(1.6,1.9,1.6,1.6)
+`altuera<-c(1.6,1.9,1.6,1.6)`
 
 `@hint`
-gogoratu batezbestekoaren komandoa mean dela eta aldagaia parentesisen artean jarri behar dela
+gogoratu batezbestekoaren komandoa `mean()` dela eta aldagaia parentesisen artean jarri behar dela
 
 >
 
