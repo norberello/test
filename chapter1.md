@@ -206,7 +206,7 @@ gogoratu batezbestekoaren komandoa `mean()` dela eta aldagaia parentesisen artea
 
 `@pre_exercise_code`
 ```{r}
-
+altuera<-c(1.6,1.9,1.6,1.6)
 
 ```
 
