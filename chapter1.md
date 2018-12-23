@@ -237,9 +237,12 @@ key: b677215360
 xp: 50
 ```
 
+
+Akohola arazoak dauzkaten 4262 helduez osatuta dagoen lagin bat daukazu non pertsona bakoitza, justiziak aginduta, alkohola tratamendu batean dagoen ala ez eta zenbat aldiz (behin edo birritan) atxilotuta izan den azkenego urtean ezaguna den. Taula ikusteko idatzi:
+
 `print(alk.taula)`
 
-Akohola arazoak dauzkaten 4262 helduez osatuta dagoen lagin bat daukazu non pertsona bakoitza, justiziak aginduta, alkohola tratamendu batean dagoen ala ez eta zenbat aldiz (behin edo birritan) atxilotuta izan den azkenego urtean ezaguna den. "chisq.test(alk.taula)" idatzi kontsolan eta aukeratu erantzun zuzena
+ Orain `chisq.test(alk.taula)` idatzi kontsolan eta aukeratu erantzun zuzena
 
 `@possible_answers`
 - [Alkohola tratamendua eta atxilotuta izatearekin ez dago lotura esanguratsurik] 
@@ -260,7 +263,7 @@ print(alk.taula)
 `@sct`
 ```{r}
 msg_bad <- "ez da zuzena!"
-msg_success <- "Bai! Badirudi hartzen ari zarela"
+msg_success <- "Bai! Oso ondo ari zara!"
 test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad))
 ```
 
