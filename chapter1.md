@@ -15,13 +15,13 @@ xp: 50
 skills: 1
 ```
 
-Have a look at the plot that showed up in the viewer to the right. Which type of movie has the worst rating assigned to it?
+Have a look at the plot that showed up in the viewer to the right. Which type of regression is represented?
 
 `@possible_answers`
-- Adventure
-- Action
-- Animation
-- Comedy
+- Linear regression
+- Logistic regression
+- Exponential regression
+- Power regresssion
 
 `@hint`
 Have a look at the plot. Which color does the point with the lowest rating have?
@@ -57,7 +57,7 @@ curve(predict(model.con,data.frame(temp=x),type="resp"),add=TRUE) # draws a curv
 # SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
 
 msg_bad <- "That is not correct!"
-msg_success <- "Exactly! There seems to be a very bad action movie in the dataset."
+msg_success <- "Exactly!"
 test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 ```
 
