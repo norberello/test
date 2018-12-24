@@ -122,6 +122,63 @@ test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad))
 
 ---
 
+## Tenperatura eta kondentsazioa
+
+```yaml
+type: MultipleChoiceExercise
+key: 7f79456e6b
+lang: r
+xp: 50
+skills: 1
+```
+
+Begiratu eskuman daukazun grafikoa, zein erregresio mota da?
+
+`@possible_answers`
+- Linear regression
+- [Logistic regression]
+- Exponential regression
+- Power regresssion
+
+`@hint`
+`summary(model.con)`
+
+`@pre_exercise_code`
+```{r}
+# The pre exercise code runs code to initialize the user's workspace.
+# You can use it to load packages, initialize datasets and draw a plot in the viewer
+
+#movies <- #read.csv("http://s3.amazonaws.com/assets.datacamp.com/course/introduction_to_r/movies.csv")
+
+temp<-c(-5,-1,-2,0,2,2,4,4,5,5,7,7,9,9,12,14,15,14,20,25,30)
+cond<-c(1,1,1,1,1,1,1,1,1,0,1,0,1,0,0,0,0,0,0,0,0)
+#dat=as.data.frame(cbind(bodysize,survive)) # saves dataframe with two columns: body size & survival
+
+model.con<-glm(cond ~ temp, family = binomial(link = "logit"))
+#why not simply family=binomial?
+summary(model.con)
+
+#plot(model.con)
+#anova(model.con, test="Chisq")
+
+plot(temp,cond,xlab="Temperature",ylab="Probability of condensation") # plot with body size on x-axis and survival (0 or 1) on y-axis
+#g=glm(survive~bodysize,family=binomial,dat) # run a logistic regression model (in this case, generalized linear model with logit link). see ?glm
+
+curve(predict(model.con,data.frame(temp=x),type="resp"),add=TRUE) # draws a curve based on prediction from logistic regression model
+#cool
+#ggplot(movies, aes(x = runtime, y = rating, col = genre)) + geom_point()
+```
+
+`@sct`
+```{r}
+# SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
+msg_bad <- "ez da zuzena!"
+msg_success <- "Bai! Oso ondo ari zara!"
+test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad,msg_bad))
+```
+
+---
+
 ## alkohola eta sexua
 
 ```yaml
@@ -199,64 +256,6 @@ wilcox.test(alkohol~sex,data=alk.datoak)
 ```{r}
 msg_bad <- "ez, zerbait ez duzu ondo egin! Erabili head(alk.datoak) aldagaiak ondo idazteko"
 success_msg("Oso ondo!")
-```
-
----
-
-## Tenperatura eta kondentsazioa
-
-```yaml
-type: MultipleChoiceExercise
-key: 7f79456e6b
-lang: r
-xp: 50
-skills: 1
-```
-
-Begiratu eskuman daukazun grafikoa, zein erregresio mota da?
-
-`@possible_answers`
-- Linear regression
-- Logistic regression
-- Exponential regression
-- Power regresssion
-
-`@hint`
-`summary(model.con)`
-
-`@pre_exercise_code`
-```{r}
-# The pre exercise code runs code to initialize the user's workspace.
-# You can use it to load packages, initialize datasets and draw a plot in the viewer
-
-#movies <- #read.csv("http://s3.amazonaws.com/assets.datacamp.com/course/introduction_to_r/movies.csv")
-
-temp<-c(-5,-1,-2,0,2,2,4,4,5,5,7,7,9,9,12,14,15,14,20,25,30)
-cond<-c(1,1,1,1,1,1,1,1,1,0,1,0,1,0,0,0,0,0,0,0,0)
-#dat=as.data.frame(cbind(bodysize,survive)) # saves dataframe with two columns: body size & survival
-
-model.con<-glm(cond ~ temp, family = binomial(link = "logit"))
-#why not simply family=binomial?
-summary(model.con)
-
-#plot(model.con)
-#anova(model.con, test="Chisq")
-
-plot(temp,cond,xlab="Temperature",ylab="Probability of condensation") # plot with body size on x-axis and survival (0 or 1) on y-axis
-#g=glm(survive~bodysize,family=binomial,dat) # run a logistic regression model (in this case, generalized linear model with logit link). see ?glm
-
-curve(predict(model.con,data.frame(temp=x),type="resp"),add=TRUE) # draws a curve based on prediction from logistic regression model
-#cool
-#ggplot(movies, aes(x = runtime, y = rating, col = genre)) + geom_point()
-```
-
-`@sct`
-```{r}
-# SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
-
-msg_bad <- "That is not correct!"
-msg_success <- "Exactly!"
-test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 ```
 
 ---
