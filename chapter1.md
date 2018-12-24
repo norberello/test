@@ -180,10 +180,10 @@ xp: 50
 ```
 
 `@instructions`
-Orain egin t-test bat jakiteko edari kopurua ezberdina den ala ez sexuen artean
+Badirudi grafikoki ezberdintasunak daudela, ikus dezagun estatistika bermatzen duen ala ez. Egin t-test bat jakiteko edari kopurua ezberdina den ala ez sexuen artean
 
 `@hint`
-menpeko aldagaia eta aldagai askeak idatzi
+menpeko aldagaia eta aldagai askeak idatzi "____" markatuta dauden lekuan
 
 `@sample_code`
 ```{r}
