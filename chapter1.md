@@ -208,7 +208,7 @@ xp: 50
 Marraztu datuak kutxa diagrama batean boxplot erabilita
 
 `@hint`
-jarri parentesisen barruan irizpide aldagaia eta datu objetua dagozkion lekuan
+barruan jarri irizpide aldagaia eta datu objetua dagozkion lekuan
 
 `@sample_code`
 ```{r}
@@ -282,6 +282,7 @@ p < 0.5 baino txikiagoa bada konparatzen dena esanguratsua da estatistikoki
 `@sct`
 ```{r}
 # SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
+#hau ez da ateratzen nik nahi nuen bezala
 msg_bad <- "ez da zuzena!"
 msg_success <- "Bai! Hori da!"
 test_mc(correct = 3, feedback_msgs = c(msg_bad, msg_bad,msg_success))
@@ -373,4 +374,50 @@ test_function("plot", args = "col")
 test_error()
 
 success_msg("Good work!")
+```
+
+---
+
+## delituak EHn
+
+```yaml
+type: NormalExercise
+key: c8cedb0d55
+xp: 100
+```
+
+EH-ko udalerrien delitu indizea grabatuta daude delituak objetuan, kalkulatu ze delitu indize ibiltatea gertatu zen 2017an eta gero bere mediana. Hori egin ondoren atera histograma bat ere bai.
+
+`@instructions`
+Erabili `mean`,`median`, eta `hist` eskatutakoa ateratzeko.
+
+`@hint`
+pistak dagoeneko emanda daude instrukziotan
+
+`@pre_exercise_code`
+```{r}
+#https://assets.datacamp.com/production/repositories/2196/datasets/d09c6c419e110e33701d755304971f44a0049b41/Delitu-indizea.csv
+delituak <- read.csv(url("https://assets.datacamp.com/production/repositories/2196/datasets/d09c6c419e110e33701d755304971f44a0049b41/Delitu-indizea.csv"),header=TRUE)
+names(delituak)
+```
+
+`@sample_code`
+```{r}
+mean(___)
+median(___)
+#eta orain atara histograma
+
+```
+
+`@solution`
+```{r}
+mean(delituak)
+median(delituak)
+hist(delituak)
+```
+
+`@sct`
+```{r}
+msg_bad <- "ez, pentsatu pixkat, oso erraza da"
+msg_success <- "oso ondo!"
 ```
