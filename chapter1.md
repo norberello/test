@@ -208,7 +208,7 @@ xp: 50
 Marraztu datuak kutxa diagrama batean boxplot erabilita
 
 `@hint`
-jarri parentesisen barruan irizpide aldagaia
+jarri barruan irizpide aldagaia eta datu objetua dagozkion lekuan
 
 `@sample_code`
 ```{r}
@@ -226,6 +226,7 @@ boxplot(alkohol~sex,data=alk.datoak,
 `@sct`
 ```{r}
 # SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
+#hau ez zait agertzen!
 msg_bad <- "ez da zuzena!"
 msg_success <- "Bai! Oso ondo ari zara!"
 ```
