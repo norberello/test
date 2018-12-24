@@ -284,7 +284,7 @@ p < 0.5 baino txikiagoa bada konparatzen dena esanguratsua da estatistikoki
 # SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
 msg_bad <- "ez da zuzena!"
 msg_success <- "Bai! Hori da!"
-test_mc(correct = 3, feedback_msgs = c(msg_bad, msg_bad,msg_bad,msg_success))
+test_mc(correct = 3, feedback_msgs = c(msg_bad, msg_bad,msg_success))
 ```
 
 ---
