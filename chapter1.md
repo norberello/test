@@ -5,152 +5,6 @@ attachments:
     slides_link: 'https://s3.amazonaws.com/assets.datacamp.com/course/teach/slides_example.pdf'
 ---
 
-## Tenperatura eta kondentsazioa
-
-```yaml
-type: MultipleChoiceExercise
-key: 7f79456e6b
-lang: r
-xp: 50
-skills: 1
-```
-
-Have a look at the plot that showed up in the viewer to the right. Which type of regression is represented?
-
-`@possible_answers`
-- Linear regression
-- Logistic regression
-- Exponential regression
-- Power regresssion
-
-`@hint`
-`summary(model.con)`
-
-`@pre_exercise_code`
-```{r}
-# The pre exercise code runs code to initialize the user's workspace.
-# You can use it to load packages, initialize datasets and draw a plot in the viewer
-
-#movies <- #read.csv("http://s3.amazonaws.com/assets.datacamp.com/course/introduction_to_r/movies.csv")
-
-temp<-c(-5,-1,-2,0,2,2,4,4,5,5,7,7,9,9,12,14,15,14,20,25,30)
-cond<-c(1,1,1,1,1,1,1,1,1,0,1,0,1,0,0,0,0,0,0,0,0)
-#dat=as.data.frame(cbind(bodysize,survive)) # saves dataframe with two columns: body size & survival
-
-model.con<-glm(cond ~ temp, family = binomial(link = "logit"))
-#why not simply family=binomial?
-summary(model.con)
-
-#plot(model.con)
-#anova(model.con, test="Chisq")
-
-plot(temp,cond,xlab="Temperature",ylab="Probability of condensation") # plot with body size on x-axis and survival (0 or 1) on y-axis
-#g=glm(survive~bodysize,family=binomial,dat) # run a logistic regression model (in this case, generalized linear model with logit link). see ?glm
-
-curve(predict(model.con,data.frame(temp=x),type="resp"),add=TRUE) # draws a curve based on prediction from logistic regression model
-#cool
-#ggplot(movies, aes(x = runtime, y = rating, col = genre)) + geom_point()
-```
-
-`@sct`
-```{r}
-# SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
-
-msg_bad <- "That is not correct!"
-msg_success <- "Exactly!"
-test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
-```
-
----
-
-## More movies
-
-```yaml
-type: NormalExercise
-key: db074e2b1a
-lang: r
-xp: 100
-skills: 1
-```
-
-In the previous exercise, you saw a dataset about movies. In this exercise, we'll have a look at yet another dataset about movies!
-
-A dataset with a selection of movies, `movie_selection`, is available in the workspace.
-
-`@instructions`
-- Check out the structure of `movie_selection`.
-- Select movies with a rating of 5 or higher. Assign the result to `good_movies`.
-- Use `plot()` to  plot `good_movies$Run` on the x-axis, `good_movies$Rating` on the y-axis and set `col` to `good_movies$Genre`.
-
-`@hint`
-- Use `str()` for the first instruction.
-- For the second instruction, you should use `...[movie_selection$Rating >= 5, ]`.
-- For the plot, use `plot(x = ..., y = ..., col = ...)`.
-
-`@pre_exercise_code`
-```{r}
-# You can also prepare your dataset in a specific way in the pre exercise code
-load(url("https://s3.amazonaws.com/assets.datacamp.com/course/teach/movies.RData"))
-movie_selection <- Movies[Movies$Genre %in% c("action", "animated", "comedy"), c("Genre", "Rating", "Run")]
-
-delituak
-#load(url("https://assets.datacamp.com/production/repositories/2196/datasets/d09c6c419e110e33701d755304971f44a0049b41/Delitu-indizea.csv"))
-
-
-
-# Clean up the environment
-rm(Movies)
-```
-
-`@sample_code`
-```{r}
-# movie_selection is available in your workspace
-
-# Check out the structure of movie_selection
-
-
-# Select movies that have a rating of 5 or higher: good_movies
-
-
-# Plot Run (i.e. run time) on the x axis, Rating on the y axis, and set the color using Genre
-
-```
-
-`@solution`
-```{r}
-# movie_selection is available in your workspace
-
-# Check out the structure of movie_selection
-str(movie_selection)
-
-# Select movies that have a rating of 5 or higher: good_movies
-good_movies <- movie_selection[movie_selection$Rating >= 5, ]
-
-# Plot Run (i.e. run time) on the x axis, Rating on the y axis, and set the color using Genre
-plot(good_movies$Run, good_movies$Rating, col = good_movies$Genre)
-```
-
-`@sct`
-```{r}
-# SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
-
-test_function("str", args = "object",
-              not_called_msg = "You didn't call `str()`!",
-              incorrect_msg = "You didn't call `str(object = ...)` with the correct argument, `object`.")
-
-test_object("good_movies")
-
-test_function("plot", args = "x")
-test_function("plot", args = "y")
-test_function("plot", args = "col")
-
-test_error()
-
-success_msg("Good work!")
-```
-
----
-
 ## Galdera bat
 
 ```yaml
@@ -345,4 +199,150 @@ wilcox.test(alkohol~sex,data=alk.datoak)
 ```{r}
 msg_bad <- "ez, zerbait ez duzu ondo egin! Erabili head(alk.datoak) aldagaiak ondo idazteko"
 success_msg("Oso ondo!")
+```
+
+---
+
+## Tenperatura eta kondentsazioa
+
+```yaml
+type: MultipleChoiceExercise
+key: 7f79456e6b
+lang: r
+xp: 50
+skills: 1
+```
+
+Begiratu eskuman daukazun grafikoa, zein erregresio mota da?
+
+`@possible_answers`
+- Linear regression
+- Logistic regression
+- Exponential regression
+- Power regresssion
+
+`@hint`
+`summary(model.con)`
+
+`@pre_exercise_code`
+```{r}
+# The pre exercise code runs code to initialize the user's workspace.
+# You can use it to load packages, initialize datasets and draw a plot in the viewer
+
+#movies <- #read.csv("http://s3.amazonaws.com/assets.datacamp.com/course/introduction_to_r/movies.csv")
+
+temp<-c(-5,-1,-2,0,2,2,4,4,5,5,7,7,9,9,12,14,15,14,20,25,30)
+cond<-c(1,1,1,1,1,1,1,1,1,0,1,0,1,0,0,0,0,0,0,0,0)
+#dat=as.data.frame(cbind(bodysize,survive)) # saves dataframe with two columns: body size & survival
+
+model.con<-glm(cond ~ temp, family = binomial(link = "logit"))
+#why not simply family=binomial?
+summary(model.con)
+
+#plot(model.con)
+#anova(model.con, test="Chisq")
+
+plot(temp,cond,xlab="Temperature",ylab="Probability of condensation") # plot with body size on x-axis and survival (0 or 1) on y-axis
+#g=glm(survive~bodysize,family=binomial,dat) # run a logistic regression model (in this case, generalized linear model with logit link). see ?glm
+
+curve(predict(model.con,data.frame(temp=x),type="resp"),add=TRUE) # draws a curve based on prediction from logistic regression model
+#cool
+#ggplot(movies, aes(x = runtime, y = rating, col = genre)) + geom_point()
+```
+
+`@sct`
+```{r}
+# SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
+
+msg_bad <- "That is not correct!"
+msg_success <- "Exactly!"
+test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
+```
+
+---
+
+## More movies
+
+```yaml
+type: NormalExercise
+key: db074e2b1a
+lang: r
+xp: 100
+skills: 1
+```
+
+In the previous exercise, you saw a dataset about movies. In this exercise, we'll have a look at yet another dataset about movies!
+
+A dataset with a selection of movies, `movie_selection`, is available in the workspace.
+
+`@instructions`
+- Check out the structure of `movie_selection`.
+- Select movies with a rating of 5 or higher. Assign the result to `good_movies`.
+- Use `plot()` to  plot `good_movies$Run` on the x-axis, `good_movies$Rating` on the y-axis and set `col` to `good_movies$Genre`.
+
+`@hint`
+- Use `str()` for the first instruction.
+- For the second instruction, you should use `...[movie_selection$Rating >= 5, ]`.
+- For the plot, use `plot(x = ..., y = ..., col = ...)`.
+
+`@pre_exercise_code`
+```{r}
+# You can also prepare your dataset in a specific way in the pre exercise code
+load(url("https://s3.amazonaws.com/assets.datacamp.com/course/teach/movies.RData"))
+movie_selection <- Movies[Movies$Genre %in% c("action", "animated", "comedy"), c("Genre", "Rating", "Run")]
+
+delituak
+#load(url("https://assets.datacamp.com/production/repositories/2196/datasets/d09c6c419e110e33701d755304971f44a0049b41/Delitu-indizea.csv"))
+
+
+
+# Clean up the environment
+rm(Movies)
+```
+
+`@sample_code`
+```{r}
+# movie_selection is available in your workspace
+
+# Check out the structure of movie_selection
+
+
+# Select movies that have a rating of 5 or higher: good_movies
+
+
+# Plot Run (i.e. run time) on the x axis, Rating on the y axis, and set the color using Genre
+
+```
+
+`@solution`
+```{r}
+# movie_selection is available in your workspace
+
+# Check out the structure of movie_selection
+str(movie_selection)
+
+# Select movies that have a rating of 5 or higher: good_movies
+good_movies <- movie_selection[movie_selection$Rating >= 5, ]
+
+# Plot Run (i.e. run time) on the x axis, Rating on the y axis, and set the color using Genre
+plot(good_movies$Run, good_movies$Rating, col = good_movies$Genre)
+```
+
+`@sct`
+```{r}
+# SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
+
+test_function("str", args = "object",
+              not_called_msg = "You didn't call `str()`!",
+              incorrect_msg = "You didn't call `str(object = ...)` with the correct argument, `object`.")
+
+test_object("good_movies")
+
+test_function("plot", args = "x")
+test_function("plot", args = "y")
+test_function("plot", args = "col")
+
+test_error()
+
+success_msg("Good work!")
 ```
