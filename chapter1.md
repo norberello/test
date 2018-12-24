@@ -237,7 +237,6 @@ key: b677215360
 xp: 50
 ```
 
-
 Akohola arazoak dauzkaten 4262 helduez osatuta dagoen lagin bat daukazu non pertsona bakoitza, justiziak aginduta, alkohola tratamendu batean dagoen ala ez eta zenbat aldiz (behin edo birritan) atxilotuta izan den azkenego urtean ezaguna den. Taula ikusteko idatzi:
 
 `print(alk.taula)`
