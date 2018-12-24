@@ -261,6 +261,32 @@ msg_bad <- "ez, zerbait ez duzu ondo egin! Erabili head(alk.datoak) aldagaiak on
 success_msg("Oso ondo!")
 ```
 
+***
+
+```yaml
+type: MultipleChoiceExercise
+key: 82846a2a6b
+```
+
+`@question`
+Zein da zuzena?
+
+`@possible_answers`
+1. Emakume eta gizonezkoeen edari kopururen arteko batazbesteko konparaketa estatistikoi esanguratsua da (W = 9.5, p > 0.05)
+2. Emakumeek gizonezkoek baino gehiago edan dute  (W = 9.5, p > 0.05)
+3. [Emakume eta gizonezkoeen edari kopururen arteko batazbesteko konparaketa ez da estatistikoki esanguratsua izan (W = 9.5, p > 0.05)]
+
+`@hint`
+
+
+`@sct`
+```{r}
+# SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
+msg_bad <- "ez da zuzena!"
+msg_success <- "Bai! Hori da!"
+test_mc(correct = 3, feedback_msgs = c(msg_bad, msg_success, msg_bad,msg_bad))
+```
+
 ---
 
 ## More movies
