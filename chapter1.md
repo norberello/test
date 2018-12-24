@@ -277,7 +277,7 @@ Zein da zuzena?
 3. [Emakume eta gizonezkoeen edari kopururen arteko batazbesteko konparaketa ez da estatistikoki esanguratsua izan (W = 9.5, p > 0.05)]
 
 `@hint`
-
+p < 0.5 baino txikiagoa bada konparatzen dena esanguratsua da estatistikoki
 
 `@sct`
 ```{r}
