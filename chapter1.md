@@ -225,7 +225,9 @@ boxplot(alkohol~sex,data=alk.datoak,
 
 `@sct`
 ```{r}
-
+# SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
+msg_bad <- "ez da zuzena!"
+msg_success <- "Bai! Oso ondo ari zara!"
 ```
 
 ***
