@@ -208,7 +208,7 @@ xp: 50
 Marraztu datuak kutxa diagrama batean boxplot erabilita
 
 `@hint`
-barruan jarri irizpide aldagaia eta datu objetua dagozkion lekuan
+jarri parentesisen barruan irizpide aldagaia eta datu objetua dagozkion lekuan
 
 `@sample_code`
 ```{r}
@@ -282,7 +282,6 @@ p < 0.5 baino txikiagoa bada konparatzen dena esanguratsua da estatistikoki
 `@sct`
 ```{r}
 # SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
-#hau ez da ateratzen nik nahi nuen bezala
 msg_bad <- "ez da zuzena!"
 msg_success <- "Bai! Hori da!"
 test_mc(correct = 3, feedback_msgs = c(msg_bad, msg_bad,msg_success))
