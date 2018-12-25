@@ -429,7 +429,7 @@ data<-read.csv(url("https://assets.datacamp.com/production/repositories/2196/dat
 ```{r}
 mean(___)
 median(___)
-#eta orain atara histograma
+#eta orain atera histograma
 
 ```
 
