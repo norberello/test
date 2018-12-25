@@ -527,5 +527,6 @@ range(pijo)
 
 `@sct`
 ```{r}
-
+test_error()
+success_msg("oso ondo ari zara!")
 ```
