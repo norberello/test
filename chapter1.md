@@ -400,6 +400,7 @@ pistak dagoeneko emanda daude instrukziotan
 #test/Delitu-indizea.csv
 delituak <- read.csv(url("https://assets.datacamp.com/production/repositories/2196/datasets/d09c6c419e110e33701d755304971f44a0049b41/Delitu-indizea.csv"),header=TRUE)
 names(delituak)
+#I tried an online R app and this works, what am I doing wrong
 ```
 
 `@sample_code`
