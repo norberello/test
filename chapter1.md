@@ -444,6 +444,7 @@ hist(data)
 
 `@sct`
 ```{r}
+# General
 test_error()
-success_msg("Nice work!")
+success_msg("oso ondo ari zara!")
 ```
