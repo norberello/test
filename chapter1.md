@@ -479,3 +479,16 @@ msg_bad <- "ez, pentsatu pixkat, oso erraza da"
 msg_success <- "oso ondo!"
 test_mc(correct = 3, feedback_msgs = c(msg_bad,msg_bad, msg_success, msg_bad))
 ```
+
+---
+
+## Hutsik ez egoteko
+
+```yaml
+type: VideoExercise
+key: 3c370d7fec
+xp: 50
+```
+
+`@projector_key`
+46f8f8be2143811bca6c23ecee204622
