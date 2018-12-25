@@ -420,7 +420,5 @@ hist(delituak)
 `@sct`
 ```{r}
 test_error()
-msg_bad <- "ez, pentsatu pixkat, oso erraza da"
-msg_success <- "oso ondo!"
 success_msg("Nice work!")
 ```
