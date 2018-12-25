@@ -478,17 +478,17 @@ sum((my_vect - my_mean)^2)
 
 # sct code
 # first instruction
-test_student_typed("my_vect <- c(1,2,3,4,5)", not_typed_msg = "Something is wrong with `my_vect`. Take another look at the instruction.")
+test_student_typed("my_vect <- c(1,2,3,4,5)", not_typed_msg = "zerbait txarto egin duzu, begiratu berriro instrukzioak")
 
 # second instruction
-test_student_typed("my_mean <- mean(my_vect)", not_typed_msg = "Something is wrong with `my_mean`.")
+test_student_typed("my_mean <- mean(my_vect)", not_typed_msg = "`my_mean` objetuarekin zebait ez dago zuzen")
 
 # third instruction
-test_student_typed("sum((my_vect - my_mean)^2)", not_typed_msg = "Take a look at your code for the third instruction. To calculate the sum of squares you will need to take the sum of the square of the difference between `my_vect` and `my_mean`.")
+test_student_typed("sum((my_vect - my_mean)^2)", not_typed_msg = "begiratu hirugarrengo agindua. Berreturen batura kalkulatzeko `my_vect` eta `my_mean` arteko diferentziaren karratura egin beharko duzu")
 
 # General
 test_error()
-success_msg("`test_student_typed` can be useful in certain situations, but it should be avoided in general since there are often multiple ways of doing the same thing in R. A student might be doing the problem correctly, but this SCT will tell them they are wrong unless they enter it exactly as you have.")
+success_msg("oso ondo ari zara!")
 
 
 
