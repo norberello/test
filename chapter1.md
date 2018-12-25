@@ -179,7 +179,7 @@ test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad,msg_bad))
 
 ---
 
-## alkohola eta sexua
+## Alkohola eta sexua
 
 ```yaml
 type: TabExercise
@@ -288,145 +288,49 @@ msg_success <- "Bai! Hori da!"
 test_mc(correct = 3, feedback_msgs = c(msg_bad, msg_bad,msg_success))
 ```
 
----
-
-## More movies
+***
 
 ```yaml
 type: NormalExercise
-key: db074e2b1a
-lang: r
-xp: 100
-skills: 1
+key: 0027829053
 ```
-
-In the previous exercise, you saw a dataset about movies. In this exercise, we'll have a look at yet another dataset about movies!
-
-A dataset with a selection of movies, `movie_selection`, is available in the workspace.
 
 `@instructions`
-- Check out the structure of `movie_selection`.
-- Select movies with a rating of 5 or higher. Assign the result to `good_movies`.
-- Use `plot()` to  plot `good_movies$Run` on the x-axis, `good_movies$Rating` on the y-axis and set `col` to `good_movies$Genre`.
+Orain grafiko bera egin `ggplot2` library erabilita
 
 `@hint`
-- Use `str()` for the first instruction.
-- For the second instruction, you should use `...[movie_selection$Rating >= 5, ]`.
-- For the plot, use `plot(x = ..., y = ..., col = ...)`.
-
-`@pre_exercise_code`
-```{r}
-# You can also prepare your dataset in a specific way in the pre exercise code
-load(url("https://s3.amazonaws.com/assets.datacamp.com/course/teach/movies.RData"))
-movie_selection <- Movies[Movies$Genre %in% c("action", "animated", "comedy"), c("Genre", "Rating", "Run")]
-
-delituak
-#load(url("https://assets.datacamp.com/production/repositories/2196/datasets/d09c6c419e110e33701d755304971f44a0049b41/Delitu-indizea.csv"))
-
-
-
-# Clean up the environment
-rm(Movies)
-```
+1. ggplot2 jarri behar den lekuan
+2. jarri "___" eta "___" lekuan dagozkion aldagaiak
 
 `@sample_code`
 ```{r}
-# movie_selection is available in your workspace
-
-# Check out the structure of movie_selection
-
-
-# Select movies that have a rating of 5 or higher: good_movies
-
-
-# Plot Run (i.e. run time) on the x axis, Rating on the y axis, and set the color using Genre
-
+library(____)
+ggplot(aes(y =____, x =___), data = alk.datoak) + geom_boxplot()
 ```
 
 `@solution`
 ```{r}
-# movie_selection is available in your workspace
-
-# Check out the structure of movie_selection
-str(movie_selection)
-
-# Select movies that have a rating of 5 or higher: good_movies
-good_movies <- movie_selection[movie_selection$Rating >= 5, ]
-
-# Plot Run (i.e. run time) on the x axis, Rating on the y axis, and set the color using Genre
-plot(good_movies$Run, good_movies$Rating, col = good_movies$Genre)
+library(ggplot2)
+ggplot(aes(y = alkohol, x = sex), data = alk.datoak) + geom_boxplot()
 ```
 
 `@sct`
 ```{r}
-# SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
+# sct code
+# first instruction
+test_function("library", incorrect_msg = "library-ren izena ez duzu ondo idatzi")
 
-test_function("str", args = "object",
-              not_called_msg = "You didn't call `str()`!",
-              incorrect_msg = "You didn't call `str(object = ...)` with the correct argument, `object`.")
+# second instruction
+test_function("ggplot", incorrect_msg = "zerbait ez duzu ondo egin ggplot komandoarekin, pentsatu pixkat")
 
-test_object("good_movies")
-
-test_function("plot", args = "x")
-test_function("plot", args = "y")
-test_function("plot", args = "col")
-
+# General
 test_error()
-
-success_msg("Good work!")
+success_msg("hoberena zara!")
 ```
 
 ---
 
-## delituak EHn
-
-```yaml
-type: NormalExercise
-key: c8cedb0d55
-xp: 100
-```
-
-EH-ko udalerrien delitu indizea grabatuta daude delituak objetuan, kalkulatu ze delitu indize ibiltatea gertatu zen 2017an eta gero bere mediana. Hori egin ondoren atera histograma bat ere bai.
-
-`@instructions`
-Erabili `mean`,`median`, eta `hist` eskatutakoa ateratzeko.
-
-`@hint`
-pistak dagoeneko emanda daude instrukziotan
-
-`@pre_exercise_code`
-```{r}
-#https://assets.datacamp.com/production/repositories/2196/datasets/d09c6c419e110e33701d755304971f44a0049b41/Delitu-indizea.csv
-#test/Delitu-indizea.csv
-delituak <- read.csv(url("https://assets.datacamp.com/production/repositories/2196/datasets/d09c6c419e110e33701d755304971f44a0049b41/Delitu-indizea.csv"),header=TRUE)
-names(delituak)
-#I tried an online R app and this works, what am I doing wrong
-```
-
-`@sample_code`
-```{r}
-mean(___)
-median(___)
-#eta orain atara histograma
-
-```
-
-`@solution`
-```{r}
-mean(delituak)
-median(delituak)
-hist(delituak)
-```
-
-`@sct`
-```{r}
-test_error()
-success_msg("Nice work!")
-```
-
----
-
-## objetuak esleitzen
+## Objetuak esleitzen
 
 ```yaml
 type: NormalExercise
@@ -496,4 +400,52 @@ success_msg("oso ondo ari zara!")
 
 
 
+```
+
+---
+
+## Delituak EHn
+
+```yaml
+type: NormalExercise
+key: c8cedb0d55
+xp: 100
+```
+
+EH-ko udalerrien delitu indizea grabatuta daude delituak objetuan, kalkulatu ze delitu indize ibiltatea gertatu zen 2017an eta gero bere mediana. Hori egin ondoren atera histograma bat ere bai.
+
+`@instructions`
+Erabili `mean`,`median`, eta `hist` eskatutakoa ateratzeko.
+
+`@hint`
+pistak dagoeneko emanda daude instrukziotan
+
+`@pre_exercise_code`
+```{r}
+#https://assets.datacamp.com/production/repositories/2196/datasets/d09c6c419e110e33701d755304971f44a0049b41/Delitu-indizea.csv
+#test/Delitu-indizea.csv
+delituak <- read.csv(url("https://assets.datacamp.com/production/repositories/2196/datasets/d09c6c419e110e33701d755304971f44a0049b41/Delitu-indizea.csv"),header=TRUE)
+names(delituak)
+#I tried an online R app and this works, what am I doing wrong
+```
+
+`@sample_code`
+```{r}
+mean(___)
+median(___)
+#eta orain atara histograma
+
+```
+
+`@solution`
+```{r}
+mean(delituak)
+median(delituak)
+hist(delituak)
+```
+
+`@sct`
+```{r}
+test_error()
+success_msg("Nice work!")
 ```
