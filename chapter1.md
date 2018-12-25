@@ -91,7 +91,10 @@ mean(altuera)
 
 `@sct`
 ```{r}
-
+# SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
+#hau ez zait agertzen!
+msg_bad <- "ez da zuzena!"
+msg_success <- "Bai! Oso ondo ari zara!"
 ```
 
 ---
@@ -518,7 +521,7 @@ pijo<-read.csv(url("https://assets.datacamp.com/production/repositories/2196/dat
 
 `@sample_code`
 ```{r}
-
+#esadazu R kontsola badabilela mesedez
 ```
 
 `@solution`
