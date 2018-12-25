@@ -422,3 +422,75 @@ hist(delituak)
 test_error()
 success_msg("Nice work!")
 ```
+
+---
+
+## Insert exercise title here
+
+```yaml
+type: NormalExercise
+key: 814b327fd8
+xp: 100
+```
+
+
+
+`@instructions`
+
+
+`@hint`
+
+
+`@pre_exercise_code`
+```{r}
+
+```
+
+`@sample_code`
+```{r}
+#my_vect izeneko bektore bat sortu 1 through 5
+my_vect <- c(_,_,_,_,_)
+
+#hartu horren batezbestekoa eta esleity my_mean-ri
+my_mean <- mean(____)
+
+#kalkulatu bektorearen berreturen batura
+sum((____ - my_mean)^2)
+```
+
+`@solution`
+```{r}
+# Create a vector called my_vect containing 1 through 5
+my_vect <- c(1, 2, 3, 4, 5)
+
+# Take the mean and assign to my_mean
+my_mean <- mean(my_vect)
+
+# Use my_mean to compute the sum of squares of my_vect
+sum((my_vect - my_mean)^2)
+```
+
+`@sct`
+```{r}
+# sct code
+#check for more options:
+#https://www.datacamp.com/community/blog/submission-correctness-testing-in-datacamp-datacamp-part-i
+
+# sct code
+# first instruction
+test_student_typed("my_vect <- c(1,2,3,4,5)", not_typed_msg = "Something is wrong with `my_vect`. Take another look at the instruction.")
+
+# second instruction
+test_student_typed("my_mean <- mean(my_vect)", not_typed_msg = "Something is wrong with `my_mean`.")
+
+# third instruction
+test_student_typed("sum((my_vect - my_mean)^2)", not_typed_msg = "Take a look at your code for the third instruction. To calculate the sum of squares you will need to take the sum of the square of the difference between `my_vect` and `my_mean`.")
+
+# General
+test_error()
+success_msg("`test_student_typed` can be useful in certain situations, but it should be avoided in general since there are often multiple ways of doing the same thing in R. A student might be doing the problem correctly, but this SCT will tell them they are wrong unless they enter it exactly as you have.")
+
+
+
+
+```
