@@ -69,8 +69,6 @@ Kalkulatu batezbestekoa behar den komanduarekin.
 `@hint`
 gogoratu batezbestekoaren komandoa `mean()` dela eta aldagaia parentesisen artean jarri behar dela
 
->
-
 `@pre_exercise_code`
 ```{r}
 altuera<-c(1.6,1.9,1.6,1.6)
@@ -91,10 +89,8 @@ mean(altuera)
 
 `@sct`
 ```{r}
-# SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
-#hau ez zait agertzen!
-msg_bad <- "ez da zuzena!"
-msg_success <- "Bai! Oso ondo ari zara!"
+test_error()
+success_msg("oso ondo ari zara!")
 ```
 
 ---
