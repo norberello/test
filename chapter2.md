@@ -24,7 +24,7 @@ key: 52cfb9b914
 xp: 50
 ```
 
-![](https://assets.datacamp.com/production/repositories/2196/datasets/bd1111b286d3358053fc8a6904007f35bd39d50c/delitu%20indizea.jpeg)
+![](https://assets.datacamp.com/production/repositories/2196/datasets/918b01868caa863c9214ad932e381acde170b591/delitu%20plot%20wide.jpeg)
 Begiratu goiko diagrama, zer da?
 
 `@hint`
