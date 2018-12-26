@@ -43,7 +43,7 @@ test_mc(correct = 4, feedback_msgs = c(msg_bad,msg_bad, msg_bad,msg_success,))
 
 ---
 
-## Insert exercise title here
+## Shapiro-test
 
 ```yaml
 type: MultipleChoiceExercise
@@ -72,4 +72,42 @@ Data2017<-delituak$X2017
 msg_bad <- "ez, pentsatu pixkat, oso erraza da"
 msg_success <- "oso ondo!"
 test_mc(correct = 1, feedback_msgs = c(msg_success,msg_bad,msg_bad, msg_bad))
+```
+
+---
+
+## Insert exercise title here
+
+```yaml
+type: NormalExercise
+key: 95cce18282
+xp: 100
+```
+
+
+
+`@instructions`
+
+
+`@hint`
+
+
+`@pre_exercise_code`
+```{r}
+
+```
+
+`@sample_code`
+```{r}
+
+```
+
+`@solution`
+```{r}
+
+```
+
+`@sct`
+```{r}
+
 ```
