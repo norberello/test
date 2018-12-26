@@ -40,3 +40,33 @@ ez da hodei diagrama
 msg_bad <- "ez, pentsatu pixkat, oso erraza da"
 msg_success <- "oso ondo!"
 test_mc(correct = 4, feedback_msgs = c(msg_bad,msg_bad, msg_bad,msg_success,))
+
+---
+
+## Insert exercise title here
+
+```yaml
+type: MultipleChoiceExercise
+key: 687b0b26de
+xp: 50
+```
+
+EH udalerriko delituen indizea kargatuta daukazu: `head(Data2017)`. Delituen indizea normala da?
+
+`@possible_answers`
+- bai
+- ez
+
+`@hint`
+shapiro.test(Data2017)
+
+`@pre_exercise_code`
+```{r}
+delituak <- read.csv(url("https://assets.datacamp.com/production/repositories/2196/datasets/d09c6c419e110e33701d755304971f44a0049b41/Delitu-indizea.csv"),header=TRUE)
+Data2017<-delituak$X2017
+```
+
+`@sct`
+```{r}
+
+```
