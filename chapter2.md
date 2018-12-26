@@ -94,8 +94,7 @@ xp: 100
 
 `@pre_exercise_code`
 ```{r}
-data <- read.table("https://raw.githubusercontent.com/norberello/test/master/crimen%20eta%20temperatura.csv", 
-                 header = FALSE)
+data <- read.csv(url("https://raw.githubusercontent.com/norberello/test/master/crimen%20eta%20temperatura.csv"),header=TRUE)
 ```
 
 `@sample_code`
