@@ -353,9 +353,9 @@ xp: 100
 Ariketa honetan objetuak nola erabili ikasiko duzu. Berreturen batura ariketa askota erabilten da matematiketan erroreak (hondakinak) estimatzeko.
 
 `@instructions`
-. my_vect izeneko bektore bat sortu 1 through 5 
-. hartu horren batezbestekoa eta esleitu my_mean-ri
-. kalkulatu bektorearen berreturen batura
+1. "my_vect" izeneko bektore bat sortu 1tik 5 arte 
+2. Hartu horren batezbestekoa eta esleitu "my_mean"-ri
+3. Kalkulatu bektorearen berreturen batura
 
 `@hint`
 ez dago misteriorik hemen: berreturen batura = "sum of squares"
