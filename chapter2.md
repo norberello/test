@@ -87,8 +87,8 @@ xp: 100
 Ikerlari batek beroa eta delituak gertatzearen arteko erlazioa ulertu nahi du. Horretarako 2003-2013 urteen arteko delitu guztiak (hauek delituen kategoria guztiak izanik) bildu eta batazbesteko tenperaturaren arauera taldekatu ditu daukazu kargatutako `data.tenp` databankuan(datuak webgune honetatik atera dira [](http://crime.static-eric.com).
 
 `@instructions`
-. Egin sakabatze diagrama bat bi aldagairen artean korrelazio analisia erabakitzeko
-. Egin korrelazio testa
+- Egin sakabatze diagrama bat bi aldagairen artean korrelazio analisia erabakitzeko
+- Egin korrelazio testa
 
 `@hint`
 erabili $ behar dituzu zutabeak (aldagaiak) aukeratzeko
