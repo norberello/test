@@ -76,7 +76,7 @@ test_mc(correct = 1, feedback_msgs = c(msg_success,msg_bad,msg_bad, msg_bad))
 
 ---
 
-## Mesedez lanegin
+## Tenperatura eta krimenak Chicagon
 
 ```yaml
 type: NormalExercise
@@ -84,27 +84,33 @@ key: 95cce18282
 xp: 100
 ```
 
-
+Ikerlari batek beroa eta delituak gertatzearen arteko erlazioa ulertu nahi du. Horretarako 2003-2013 urteen arteko delitu guztiak (hauek delituen kategoria guztiak izanik) bildu eta batazbesteko tenperaturaren arauera taldekatu ditu daukazu kargatutako `data.tenp` databankuan(datuak webgune honetatik atera dira [](http://crime.static-eric.com).
 
 `@instructions`
-
+1. Egin sakabatze diagrama bat bi aldagairen artean korrelazio analisia erabakitzeko
+2. Egin korrelazio testa
 
 `@hint`
-
+erabili $ behar dituzu zutabeak (aldagaiak) aukeratzeko
+linealtasunik ez badago metodoa "spearman"
 
 `@pre_exercise_code`
 ```{r}
-data <- read.csv(url("https://raw.githubusercontent.com/norberello/test/master/crimen%20eta%20temperatura.csv"),header=TRUE)
+data.tenp <- read.csv(url("https://raw.githubusercontent.com/norberello/test/master/crimen%20eta%20temperatura.csv"),header=TRUE)
 ```
 
 `@sample_code`
 ```{r}
-
+#egin tenperatura (x ardatza) eta tenperaturaren (y ardatza) arteko sakabanatze diagrama
+plot(data.chicago$___,_________)
+#Spearman korrelazio bat egin bi aldagairen artean
+cor.test(__________,___________,method="spearman")
 ```
 
 `@solution`
 ```{r}
-
+plot(data.chicago$Temp,data.chicago$Krimen)
+cor.test(data.chicago$Temp,data.chicago$Krimen,method="_____")
 ```
 
 `@sct`
