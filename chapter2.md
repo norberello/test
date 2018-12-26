@@ -110,7 +110,7 @@ cor.test(__________,___________,method="spearman")
 `@solution`
 ```{r}
 plot(data.chicago$Temp,data.chicago$Krimen)
-cor.test(data.chicago$Temp,data.chicago$Krimen,method="_____")
+cor.test(data.chicago$Temp,data.chicago$Krimen,method="spearman")
 ```
 
 `@sct`
