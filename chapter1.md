@@ -436,6 +436,7 @@ pistak dagoeneko emanda daude instrukziotan
 `@pre_exercise_code`
 ```{r}
 data<-read.csv(url("https://raw.githubusercontent.com/norberello/test/master/Delitu-indizea.csv"),header=TRUE)
+taula<-as.data.frame(data)
 ```
 
 `@sample_code`
