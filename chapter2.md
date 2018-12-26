@@ -16,7 +16,7 @@ d4af07299f7cf35b44fcae15191bd59b
 
 ---
 
-## Insert exercise title here
+## normaltasun diagrama
 
 ```yaml
 type: PureMultipleChoiceExercise
@@ -31,10 +31,10 @@ Begiratu goiko diagrama, zer da?
 ez da hodei diagrama
 
 `@possible_answers`
-Kutxa diagrama
-hodei diagrama
-Marra diagrama
-[histograma]
+- Kutxa diagrama
+- hodei diagrama
+- Marra diagrama
+- [histograma]
 
 `@feedback`
 msg_bad <- "ez, pentsatu pixkat, oso erraza da"
