@@ -21,7 +21,8 @@ Ni naiz naizena
 
 
 ---
-## Final Slide
+## Danak berdinak ez gara, baina...
+- Disfrutatu R ariketak
 
 ```yaml
 type: "FinalSlide"
@@ -29,5 +30,5 @@ key: "222f7e176e"
 ```
 
 `@script`
-
+si la muca fa mu, il melo fa me?![](image-url)
 
