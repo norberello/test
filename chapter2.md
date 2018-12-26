@@ -54,8 +54,9 @@ xp: 50
 EH udalerriko delituen indizea kargatuta daukazu: `head(Data2017)`. Delituen indizea normala da?
 
 `@possible_answers`
-- bai
-- ez
+- bai, testak horrela diosku
+- [ez, teskat horrela diosku]
+- ez dakit
 
 `@hint`
 shapiro.test(Data2017)
@@ -68,5 +69,7 @@ Data2017<-delituak$X2017
 
 `@sct`
 ```{r}
-
+msg_bad <- "ez, pentsatu pixkat, oso erraza da"
+msg_success <- "oso ondo!"
+test_mc(correct = 1, feedback_msgs = c(msg_success,msg_bad,msg_bad, msg_bad))
 ```

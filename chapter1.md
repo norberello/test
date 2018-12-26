@@ -5,7 +5,7 @@ attachments:
     slides_link: 'https://s3.amazonaws.com/assets.datacamp.com/course/teach/slides_example.pdf'
 ---
 
-## Hutsik ez egoteko
+## klipa, hutsik ez egoteko
 
 ```yaml
 type: VideoExercise
