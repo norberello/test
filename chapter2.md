@@ -76,7 +76,7 @@ test_mc(correct = 1, feedback_msgs = c(msg_success,msg_bad,msg_bad, msg_bad))
 
 ---
 
-## Insert exercise title here
+## Mesedez lanegin
 
 ```yaml
 type: NormalExercise
@@ -94,7 +94,7 @@ xp: 100
 
 `@pre_exercise_code`
 ```{r}
-data <- read.table("https://assets.datacamp.com/production/repositories/2196/datasets/d09c6c419e110e33701d755304971f44a0049b41/Delitu-indizea.csv", 
+data <- read.table("https://raw.githubusercontent.com/norberello/test/master/crimen%20eta%20temperatura.csv", 
                  header = FALSE)
 ```
 
