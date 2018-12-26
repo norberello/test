@@ -115,5 +115,5 @@ cor.test(data.chicago$Temp,data.chicago$Krimen,method="spearman")
 
 `@sct`
 ```{r}
-
+#https://www.datacamp.com/community/blog/using-datacamp-autograder-teach-r
 ```

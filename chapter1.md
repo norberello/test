@@ -44,6 +44,7 @@ pentsatu pixkat, oso erraza da eta!
 
 `@sct`
 ```{r}
+#https://www.r-project.org/conferences/useR-2015/presentations/245.pdf
 msg_bad <- "ez, pentsatu pixkat, oso erraza da"
 msg_success <- "oso ondo!"
 test_mc(correct = 1, feedback_msgs = c(msg_success,msg_bad,msg_bad, msg_bad))
