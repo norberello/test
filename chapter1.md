@@ -286,7 +286,7 @@ Zein da zuzena?
 `@possible_answers`
 1. Emakume eta gizonezkoeen edari kopururen arteko batazbesteko konparaketa estatistikoi esanguratsua da (W = 9.5, p > 0.05)
 2. Emakumeek gizonezkoek baino gehiago edan dute  (W = 9.5, p > 0.05)
-3. [Emakume eta gizonezkoeen edari kopururen arteko batazbesteko konparaketa ez da estatistikoki esanguratsua izan (W = 9.5, p > 0.05)]
+3. [Emakume eta gizonezkoeen edari kopururen arteko batazbesteko konparaketa ez da estatistikoki esanguratsua izan (W = 9.5, p < 0.05)]
 
 `@hint`
 p < 0.5 baino txikiagoa bada konparatzen dena esanguratsua da estatistikoki
