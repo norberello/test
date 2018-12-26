@@ -458,36 +458,3 @@ hist(data)
 test_error()
 success_msg("oso ondo ari zara!")
 ```
-
----
-
-## Saiatzen berriz
-
-```yaml
-type: MultipleChoiceExercise
-key: 0fee6f3318
-xp: 50
-```
-
-`str(data)` kontsolan, zenbat aldagai daude?
-
-`@possible_answers`
-- 251
-- 3
-- [17]
-- 20
-
-`@hint`
-ez dira 3
-
-`@pre_exercise_code`
-```{r}
-data<-read.csv(url("https://raw.githubusercontent.com/norberello/test/master/Delitu-indizea.csv"),header=TRUE)
-```
-
-`@sct`
-```{r}
-msg_bad <- "ez, pentsatu pixkat, oso erraza da"
-msg_success <- "oso ondo!"
-test_mc(correct = 3, feedback_msgs = c(msg_bad,msg_bad, msg_success, msg_bad))
-```
