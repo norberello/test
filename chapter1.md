@@ -482,7 +482,7 @@ ez dira 3
 
 `@pre_exercise_code`
 ```{r}
-data<-read.csv(url("https://assets.datacamp.com/production/repositories/2196/datasets/d09c6c419e110e33701d755304971f44a0049b41/Delitu-indizea.csv"),header=TRUE)
+data<-read.csv(url("https://raw.githubusercontent.com/norberello/test/master/Delitu-indizea.csv"),header=TRUE)
 ```
 
 `@sct`
@@ -490,43 +490,4 @@ data<-read.csv(url("https://assets.datacamp.com/production/repositories/2196/dat
 msg_bad <- "ez, pentsatu pixkat, oso erraza da"
 msg_success <- "oso ondo!"
 test_mc(correct = 3, feedback_msgs = c(msg_bad,msg_bad, msg_success, msg_bad))
-```
-
----
-
-## eta berriro, ez dago gaizki?
-
-```yaml
-type: NormalExercise
-key: f70d8cfff4
-xp: 100
-```
-
-EH-ko udalerrien delitu indizea grabatuta daude "pijo" objetuan, kalkulatu ze delitu indize ibiltatea gertatu zen 2017an
-
-`@instructions`
-kalkulatu delitu ibiltartea, ezin da errazagoa izan.
-
-`@hint`
-ez dira denak pijoak munduan, baina pijoak erabili
-
-`@pre_exercise_code`
-```{r}
-pijo<-read.csv(url("https://assets.datacamp.com/production/repositories/2196/datasets/d09c6c419e110e33701d755304971f44a0049b41/Delitu-indizea.csv"),header=TRUE)
-```
-
-`@sample_code`
-```{r}
-#esadazu R kontsola badabilela mesedez
-```
-
-`@solution`
-```{r}
-range(pijo)
-```
-
-`@sct`
-```{r}
-test_error()
-success_msg("oso ondo ari zara!")
 ```
