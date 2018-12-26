@@ -12,8 +12,8 @@ key: "804209d1c8"
 
 `@lower_third`
 
-name: Norberto Asensio![](image-url)
-title: `Norberto Asensio`![](image-url)
+name: Norberto Asensio!
+title: Irakaslea
 
 
 `@script`
@@ -21,14 +21,16 @@ Ni naiz naizena
 
 
 ---
-## Danak berdinak ez gara, baina...
-- Disfrutatu R ariketak
+## - Danak berdinak ez gara, baina...
+
+**si la muca fa mu, il melo fa me?!**
 
 ```yaml
 type: "FinalSlide"
 key: "222f7e176e"
+assignment: "- Disfrutatu R ariketak"
 ```
 
 `@script`
-si la muca fa mu, il melo fa me?![](image-url)
+
 
