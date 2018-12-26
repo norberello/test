@@ -91,8 +91,8 @@ Ikerlari batek beroa eta delituak gertatzearen arteko erlazioa ulertu nahi du. H
 - Egin korrelazio testa
 
 `@hint`
-erabili $ behar dituzu zutabeak (aldagaiak) aukeratzeko
-linealtasunik ez badago metodoa "spearman"
+- Erabili $ behar dituzun zutabeak (aldagaiak) aukeratzeko
+- Linealtasunik ez badago erabili "spearman" korrelazioa
 
 `@pre_exercise_code`
 ```{r}
