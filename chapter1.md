@@ -439,7 +439,7 @@ pistak dagoeneko emanda daude instrukziotan
 #https://raw.githubusercontent.com/norberello/test/master/Delitu-indizea.csv
 #datacamp link for Delitu-indizea
 #https://assets.datacamp.com/production/repositories/2196/datasets/d09c6c419e110e33701d755304971f44a0049b41/Delitu-indizea.csv
-dat<-read.csv(url("https://assets.datacamp.com/production/repositories/2196/datasets/d09c6c419e110e33701d755304971f44a0049b41/Delitu-indizea.csv"),header=TRUE)
+movies <-read.csv("http://s3.amazonaws.com/assets.datacamp.com/course/introduction_to_r/movies.csv",header=TRUE)
 ```
 
 `@sample_code`
