@@ -442,9 +442,8 @@ pistak dagoeneko emanda daude instrukziotan
 #data<-read.csv(url("https://raw.githubusercontent.com/norberello/test/master/Delitu-indizea.csv"),header=TRUE)
 #datuak<-as.data.frame(cbind(udalerriak,delituak)) 
 #library(data.table)
-df <- read.table("https://assets.datacamp.com/production/repositories/2196/datasets/60a665bbd1b04d7f5c78fd4e0027506ae6882e9e/delituakEH.txt", 
-                 header = TRUE)
-df
+df <- read.table("https://assets.datacamp.com/production/repositories/2196/datasets/6e3bdd4a6596804f8aea5cc9c5543dc0c62cbab4/delituakEH.txt", 
+                 header = FALSE)
 
 ```
 
