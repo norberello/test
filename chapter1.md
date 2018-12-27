@@ -439,12 +439,19 @@ pistak dagoeneko emanda daude instrukziotan
 #https://raw.githubusercontent.com/norberello/test/master/Delitu-indizea.csv
 #datacamp link for Delitu-indizea
 #https://assets.datacamp.com/production/repositories/2196/datasets/d09c6c419e110e33701d755304971f44a0049b41/Delitu-indizea.csv
-movies <-read.csv("http://s3.amazonaws.com/assets.datacamp.com/course/introduction_to_r/movies.csv",header=TRUE)
+data<-read.csv(url("https://raw.githubusercontent.com/norberello/test/master/Delitu-indizea.csv"),header=TRUE)
+str(data)
+class(data)
+taula<-as.data.frame(data)
+delituak<-data$X2017
+udalerriak<-data$Udalerria
+datuak<-as.data.frame(cbind(udalerriak,delituak)) 
+
 ```
 
 `@sample_code`
 ```{r}
-mean(movies$rate)
+mean(___)
 median(___)
 #eta orain atera histograma
 
@@ -452,9 +459,9 @@ median(___)
 
 `@solution`
 ```{r}
-mean(movies$rate)
-median(movies$rate)
-hist(movies$rate)
+mean(datuak$delituak)
+median(datuak$delituak)
+hist(datuak$delituak)
 ```
 
 `@sct`
