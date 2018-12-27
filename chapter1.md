@@ -444,7 +444,7 @@ movies <-read.csv("http://s3.amazonaws.com/assets.datacamp.com/course/introducti
 
 `@sample_code`
 ```{r}
-mean(dat)
+mean(movies$rate)
 median(___)
 #eta orain atera histograma
 
@@ -452,9 +452,9 @@ median(___)
 
 `@solution`
 ```{r}
-mean(dat)
-median(dat)
-hist(dat)
+mean(movies$rate)
+median(movies$rate)
+hist(movies$rate)
 ```
 
 `@sct`
