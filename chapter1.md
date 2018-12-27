@@ -456,12 +456,10 @@ head(___)
 
 `@solution`
 ```{r}
-head(bilbo.data)
+head(mydat)
 ```
 
 `@sct`
 ```{r}
-# General
-test_error()
-success_msg("oso ondo ari zara!")
+
 ```
