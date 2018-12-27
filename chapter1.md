@@ -439,7 +439,7 @@ pistak dagoeneko emanda daude instrukziotan
 #https://raw.githubusercontent.com/norberello/test/master/Delitu-indizea.csv
 #datacamp link for Delitu-indizea
 #https://assets.datacamp.com/production/repositories/2196/datasets/d09c6c419e110e33701d755304971f44a0049b41/Delitu-indizea.csv
-#data<-read.csv(url("https://raw.githubusercontent.com/norberello/test/master/Delitu-#indizea.csv"),header=TRUE)
+data<-read.csv(url("https://raw.githubusercontent.com/norberello/test/master/Delitu-indizea.csv"),header=TRUE)
 #str(data)
 #class(data)
 #taula<-as.data.frame(data)
@@ -447,9 +447,9 @@ pistak dagoeneko emanda daude instrukziotan
 #udalerriak<-data$Udalerria
 #datuak<-as.data.frame(cbind(udalerriak,delituak)) 
 
-library(gsheet)
-bilbo.data<-gsheet2tbl('https://docs.google.com/spreadsheets/d/1VP1ONg1r8N7CryZnBvJgu3CFPhBtu0lfPMbp8ImoMPc/edit?usp=sharing')
-head(bilbo.data)
+#library(gsheet)
+#bilbo.data<-#gsheet2tbl('https://docs.google.com/spreadsheets/d/1VP1ONg1r8N7CryZnBvJgu3CFPhBtu0lfPMbp8Im#oMPc/edit?usp=sharing')
+#head(bilbo.data)
 
 ```
 
