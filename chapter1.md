@@ -441,10 +441,10 @@ pistak dagoeneko emanda daude instrukziotan
 #https://assets.datacamp.com/production/repositories/2196/datasets/d09c6c419e110e33701d755304971f44a0049b41/Delitu-indizea.csv
 #data<-read.csv(url("https://raw.githubusercontent.com/norberello/test/master/Delitu-indizea.csv"),header=TRUE)
 #datuak<-as.data.frame(cbind(udalerriak,delituak)) 
-library(data.table)
-mydat <- fread('https://raw.githubusercontent.com/norberello/test/master/Delitu-indizea.csv')
-head(mydat)
-
+#library(data.table)
+df <- read.table("https://assets.datacamp.com/production/repositories/2196/datasets/60a665bbd1b04d7f5c78fd4e0027506ae6882e9e/delituakEH.txt", 
+                 header = TRUE)
+df
 
 ```
 
@@ -456,7 +456,7 @@ head(___)
 
 `@solution`
 ```{r}
-head(mydat)
+head(df)
 ```
 
 `@sct`
