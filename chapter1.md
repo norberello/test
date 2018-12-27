@@ -18,7 +18,7 @@ xp: 50
 
 ---
 
-## Galdera bat
+## Zentro joerako estimazioa
 
 ```yaml
 type: MultipleChoiceExercise
@@ -435,8 +435,11 @@ pistak dagoeneko emanda daude instrukziotan
 
 `@pre_exercise_code`
 ```{r}
-data<-read.csv(url("https://raw.githubusercontent.com/norberello/test/master/Delitu-indizea.csv"),header=TRUE)
-taula<-as.data.frame(data)
+#github link for delitu indizea
+#https://raw.githubusercontent.com/norberello/test/master/Delitu-indizea.csv
+#datacamp link for Delitu-indizea
+#https://assets.datacamp.com/production/repositories/2196/datasets/d09c6c419e110e33701d755304971f44a0049b41/Delitu-indizea.csv
+dat<-read.csv(url("https://assets.datacamp.com/production/repositories/2196/datasets/d09c6c419e110e33701d755304971f44a0049b41/Delitu-indizea.csv"),header=TRUE)
 ```
 
 `@sample_code`
