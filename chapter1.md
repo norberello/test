@@ -443,7 +443,8 @@ pistak dagoeneko emanda daude instrukziotan
 #datuak<-as.data.frame(cbind(udalerriak,delituak)) 
 #library(data.table)
 df <- read.table("https://assets.datacamp.com/production/repositories/2196/datasets/6e3bdd4a6596804f8aea5cc9c5543dc0c62cbab4/delituakEH.txt", 
-                 header = TRUE)
+                 header = FALSE)
+df
 
 ```
 
