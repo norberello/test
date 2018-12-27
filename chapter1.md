@@ -444,7 +444,7 @@ dat<-read.csv(url("https://assets.datacamp.com/production/repositories/2196/data
 
 `@sample_code`
 ```{r}
-mean(___)
+mean(dat)
 median(___)
 #eta orain atera histograma
 
@@ -452,9 +452,9 @@ median(___)
 
 `@solution`
 ```{r}
-mean(data)
-median(data)
-hist(data)
+mean(dat)
+median(dat)
+hist(dat)
 ```
 
 `@sct`
