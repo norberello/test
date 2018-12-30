@@ -438,13 +438,7 @@ pistak dagoeneko emanda daude instrukziotan
 `@pre_exercise_code`
 ```{r}
 rm(list=ls())
-#df <- read.csv(url("https://assets.datacamp.com/production/repositories/2196/datasets/b523206fe67d2049000ebd1fb4e9c21ab93e2b3e/megasinple.csv"))
-#library(data.table)
-#df <- fread("https://assets.datacamp.com/production/repositories/2196/datasets/b523206fe67d2049000ebd1fb4e9c21ab93e2b3e/megasinple.csv")
-
-library(readr)
-df <- read_csv("https://assets.datacamp.com/production/repositories/2196/datasets/b523206fe67d2049000ebd1fb4e9c21ab93e2b3e/megasinple.csv")
-
+df <- read.csv(url("https://assets.datacamp.com/production/repositories/2196/datasets/b523206fe67d2049000ebd1fb4e9c21ab93e2b3e/megasinple.csv"))
 ```
 
 `@sample_code`
