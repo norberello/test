@@ -443,7 +443,7 @@ library (RCurl)
 
 download <- getURL("https://assets.datacamp.com/production/repositories/2196/datasets/700deb7b5f691fce40e6e589991452333a037278/delituak2017csv.csv?accessType=DOWNLOAD")
 
-data <- read.csv (text = download)
+df <- read.csv (text = download)
 
 ```
 
@@ -455,7 +455,7 @@ head(__)
 
 `@solution`
 ```{r}
-head(data)
+head(df)
 ```
 
 `@sct`
