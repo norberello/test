@@ -455,7 +455,7 @@ head(__)
 
 `@solution`
 ```{r}
-head(df)
+head(data)
 ```
 
 `@sct`
