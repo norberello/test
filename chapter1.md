@@ -96,7 +96,7 @@ success_msg("oso ondo ari zara!")
 incorrect_msg("ziurtatatu mean komandoa ondo idatzita egoteaz eta parentesisen artean altuera aldagaiaz jartzeaz")
 #test_object("altuera", undefined_msg = "Make sure to define a variable `x`.",
 #            incorrect_msg = "Make sure that you assign the correct value to `x`.")
-msg <- "Have you used `my_fruit <- my_apples + my_oranges` to create the `my_fruit` variable?"
+
 ```
 
 ---
