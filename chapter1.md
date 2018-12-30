@@ -90,7 +90,7 @@ mean(altuera)
 
 `@sct`
 ```{r}
-test_error()
+#test_error()
 success_msg("oso ondo ari zara!")
 msg = "Do not remove or change the definition of the variables `my_vector`, `my_matrix` or `my_df`!"
 test_object("altuera", undefined_msg = msg, incorrect_msg = msg)
