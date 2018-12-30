@@ -90,12 +90,12 @@ mean(altuera)
 
 `@sct`
 ```{r}
-#test_error()
+test_error()
 #test_output_contains("18", incorrect_msg = "Make sure to add `6 + 12` on a new line. Do not start the line with a `#`, otherwise your R code is not executed!")
 success_msg("oso ondo ari zara!")
 incorrect_msg("ziurtatatu mean komandoa ondo idatzita egoteaz eta parentesisen artean altuera aldagaiaz jartzeaz")
-test_object("altuera", undefined_msg = "Make sure to define a variable `x`.",
-            incorrect_msg = "Make sure that you assign the correct value to `x`.")
+#test_object("altuera", undefined_msg = "Make sure to define a variable `x`.",
+#            incorrect_msg = "Make sure that you assign the correct value to `x`.")
 ```
 
 ---
