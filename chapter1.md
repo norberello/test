@@ -444,7 +444,7 @@ df <- read.table("https://assets.datacamp.com/production/repositories/2196/datas
 
 `@sample_code`
 ```{r}
-head(___)
+head(__)
 
 ```
 
