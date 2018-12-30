@@ -441,7 +441,7 @@ pistak dagoeneko emanda daude instrukziotan
                  header = T)
 library (RCurl)
 
-download <- getURL("https://assets.datacamp.com/production/repositories/2196/datasets/700deb7b5f691fce40e6e589991452333a037278/delituak2017csv.csv?accessType=DOWNLOAD")
+download <- getURL("https://assets.datacamp.com/production/repositories/2196/datasets/b523206fe67d2049000ebd1fb4e9c21ab93e2b3e/megasinple.csv?accessType=DOWNLOAD")
 
 df <- read.csv (text = download)
 
