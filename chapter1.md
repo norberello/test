@@ -92,6 +92,7 @@ mean(altuera)
 ```{r}
 #test_error()
 success_msg("oso ondo ari zara!")
+incorrect_msg("zerbait txarto dago zure kodigoan")
 msg = "Do not remove or change the definition of the variables `my_vector`, `my_matrix` or `my_df`!"
 test_object("altuera", undefined_msg = msg, incorrect_msg = msg)
 ```
