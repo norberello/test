@@ -92,8 +92,8 @@ mean(altuera)
 ```{r}
 test_error()
 success_msg("oso ondo ari zara!")
-test_student_typed("altuera<-c(1.6,1.9,1.6,1.6)", not_typed_msg = "Something is wrong with `my_vect`. Take another look at the instruction.")
-test_student_typed("mean(altuera)", not_typed_msg = "Something is wrong with `my_vect`. Take another look at the instruction.")
+#test_student_typed("altuera<-c(1.6,1.9,1.6,1.6)", not_typed_msg = "Something is wrong with `my_vect`. Take another look at the instruction.")
+#test_student_typed("mean(altuera)", not_typed_msg = "Something is wrong with `my_vect`. Take another look at the instruction.")
 
 incorrect_msg("zerbait txarto dago zure kodigoan")
 msg = "Do not remove or change the definition of the variables `my_vector`, `my_matrix` or `my_df`!"
