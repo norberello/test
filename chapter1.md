@@ -437,8 +437,8 @@ pistak dagoeneko emanda daude instrukziotan
 
 `@pre_exercise_code`
 ```{r}
-df <- read.table("https://assets.datacamp.com/production/repositories/2196/datasets/89766733bdf41d19d5f0d0929e0c85113d01b64b/delituak2017.txt", 
-                 header = FALSE)
+df <- read.csv("https://assets.datacamp.com/production/repositories/2196/datasets/700deb7b5f691fce40e6e589991452333a037278/delituak2017csv.csv", 
+                 header = T)
 
 ```
 
