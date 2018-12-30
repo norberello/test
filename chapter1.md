@@ -427,10 +427,10 @@ key: c8cedb0d55
 xp: 100
 ```
 
-EH-ko udalerrien delitu indizea grabatuta daude delituak objetuan, kalkulatu ze delitu indize ibiltatea gertatu zen 2017an eta gero bere mediana. Hori egin ondoren atera histograma bat ere bai.
+EH-ko udalerrien delitu indizea grabatuta daude `df` objetuan, kalkulatu ze delitu indize ibiltatea gertatu zen 2017an eta gero bere mediana. Hori egin ondoren atera histograma bat ere bai.
 
 `@instructions`
-Erabili `mean`,`median`, eta `hist` eskatutakoa ateratzeko.
+Erabili `range`,`median`, eta `hist` eskatutakoa ateratzeko.
 
 `@hint`
 pistak dagoeneko emanda daude instrukziotan
@@ -442,18 +442,28 @@ df <- read.csv("https://assets.datacamp.com/production/repositories/2196/dataset
 
 `@sample_code`
 ```{r}
-head(__)
+#ibiltartea
+range(df)
+#mediana
+median(__)
+#histograma
+
 
 ```
 
 `@solution`
 ```{r}
-head(df)
+range(df)
+median(df)
+hist(df)
+
 ```
 
 `@sct`
 ```{r}
 test_error()
 success_msg("Bai, hori da! Oso ondo ari zara!")
-test_function("head", incorrect_msg = "zerbait txarto dago. Erabili al dozu `head` komandoa?. Begiratu instrukzioak berriro")
+test_function("range", incorrect_msg = "zerbait txarto dago. Erabili al dozu `range` komandoa?. Begiratu instrukzioak berriro")
+test_function("median", incorrect_msg = "zerbait txarto dago. Erabili al dozu `median` komandoa?. Begiratu instrukzioak berriro")
+test_function("hist", incorrect_msg = "zerbait txarto dago. Erabili al dozu `hist` komandoa?. Begiratu instrukzioak berriro")
 ```
