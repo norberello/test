@@ -91,7 +91,7 @@ mean(altuera)
 
 `@sct`
 ```{r}
-test_function("mean", incorrect_msg = "Something is wrong with `my_mean`. Did you use the `mean` function?")
+test_function("mean", incorrect_msg = "zerbait txarto dago. Erabili al dozu `mean` komandoa?")
 test_error()
 success_msg("Oso ondo ari zara!")
 ```
