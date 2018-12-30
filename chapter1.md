@@ -443,8 +443,9 @@ library (RCurl)
 
 download <- getURL("https://assets.datacamp.com/production/repositories/2196/datasets/b523206fe67d2049000ebd1fb4e9c21ab93e2b3e/megasinple.csv?accessType=DOWNLOAD")
 
-df <- read.csv (text = download)
+df <- read.csv (text = download,header=T)
 
+#df <- read.csv("https://assets.datacamp.com/production/repositories/2196/datasets/b523206fe67d2049000ebd1fb4e9c21ab93e2b3e/megasinple.csv")
 ```
 
 `@sample_code`
