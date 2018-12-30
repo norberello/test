@@ -437,8 +437,13 @@ pistak dagoeneko emanda daude instrukziotan
 
 `@pre_exercise_code`
 ```{r}
-df <- read.csv("https://assets.datacamp.com/production/repositories/2196/datasets/700deb7b5f691fce40e6e589991452333a037278/delituak2017csv.csv", 
+#df <- read.csv("https://assets.datacamp.com/production/repositories/2196/datasets/700deb7b5f691fce40e6e589991452333a037278/delituak2017csv.csv", 
                  header = T)
+library (RCurl)
+
+download <- getURL("https://assets.datacamp.com/production/repositories/2196/datasets/700deb7b5f691fce40e6e589991452333a037278/delituak2017csv.csv?accessType=DOWNLOAD")
+
+data <- read.csv (text = download)
 
 ```
 
