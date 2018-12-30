@@ -455,5 +455,7 @@ head(df)
 
 `@sct`
 ```{r}
-
+test_error()
+success_msg("Bai, hori da! Oso ondo ari zara!")
+test_function("head", incorrect_msg = "zerbait txarto dago. Erabili al dozu `mean` komandoa?. Begiratu instrukzioak berriro")
 ```
