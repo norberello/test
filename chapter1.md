@@ -85,13 +85,14 @@ altuera<-c(___,___,___,___)
 
 `@solution`
 ```{r}
+altuera<-c(1.6,1.9,1.6,1.6)
 mean(altuera)
 ```
 
 `@sct`
 ```{r}
 test_error()
-success_msg("oso ondo ari zara!")
+success_msg("Oso ondo ari zara!")
 
 ```
 
