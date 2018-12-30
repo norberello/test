@@ -437,7 +437,7 @@ pistak dagoeneko emanda daude instrukziotan
 
 `@pre_exercise_code`
 ```{r}
-df <- read.table("https://assets.datacamp.com/production/repositories/2196/datasets/6e3bdd4a6596804f8aea5cc9c5543dc0c62cbab4/delituakEH.txt", 
+df <- read.table("https://assets.datacamp.com/production/repositories/2196/datasets/89766733bdf41d19d5f0d0929e0c85113d01b64b/delituak2017.txt", 
                  header = FALSE)
 
 ```
@@ -457,5 +457,5 @@ head(df)
 ```{r}
 test_error()
 success_msg("Bai, hori da! Oso ondo ari zara!")
-test_function("head", incorrect_msg = "zerbait txarto dago. Erabili al dozu `mean` komandoa?. Begiratu instrukzioak berriro")
+test_function("head", incorrect_msg = "zerbait txarto dago. Erabili al dozu `head` komandoa?. Begiratu instrukzioak berriro")
 ```
