@@ -90,8 +90,10 @@ mean(altuera)
 
 `@sct`
 ```{r}
-#test_error()
+test_error()
 success_msg("oso ondo ari zara!")
+test_student_typed("mean(altuera)", not_typed_msg = "Something is wrong with `my_vect`. Take another look at the instruction.")
+
 incorrect_msg("zerbait txarto dago zure kodigoan")
 msg = "Do not remove or change the definition of the variables `my_vector`, `my_matrix` or `my_df`!"
 test_object("altuera", undefined_msg = msg, incorrect_msg = msg)
