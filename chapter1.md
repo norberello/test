@@ -437,16 +437,8 @@ pistak dagoeneko emanda daude instrukziotan
 
 `@pre_exercise_code`
 ```{r}
-#github link for delitu indizea
-#https://raw.githubusercontent.com/norberello/test/master/Delitu-indizea.csv
-#datacamp link for Delitu-indizea
-#https://assets.datacamp.com/production/repositories/2196/datasets/d09c6c419e110e33701d755304971f44a0049b41/Delitu-indizea.csv
-#data<-read.csv(url("https://raw.githubusercontent.com/norberello/test/master/Delitu-indizea.csv"),header=TRUE)
-#datuak<-as.data.frame(cbind(udalerriak,delituak)) 
-#library(data.table)
 df <- read.table("https://assets.datacamp.com/production/repositories/2196/datasets/6e3bdd4a6596804f8aea5cc9c5543dc0c62cbab4/delituakEH.txt", 
                  header = FALSE)
-df
 
 ```
 
