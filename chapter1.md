@@ -437,7 +437,7 @@ pistak dagoeneko emanda daude instrukziotan
 
 `@pre_exercise_code`
 ```{r}
-df<-(26.92	,
+df<-c(26.92	,
 43.71	,
 23.28	,
 9.58	,
