@@ -437,7 +437,12 @@ pistak dagoeneko emanda daude instrukziotan
 
 `@pre_exercise_code`
 ```{r}
-df <- read.csv2("https://assets.datacamp.com/production/repositories/2196/datasets/b523206fe67d2049000ebd1fb4e9c21ab93e2b3e/megasinple.csv")
+#df <- read.csv2("https://assets.datacamp.com/production/repositories/2196/datasets/b523206fe67d2049000ebd1fb4e9c21ab93e2b3e/megasinple.csv")
+download.file(
+  "https://assets.datacamp.com/production/repositories/2196/datasets/b523206fe67d2049000ebd1fb4e9c21ab93e2b3e/megasinple.csv", 
+  "df3.csv")
+df<-read.csv("df3.csv")
+#not sure if this works as this will save first the downloaded image in the PC and not in the virtual datacamp repository
 ```
 
 `@sample_code`
