@@ -41,7 +41,7 @@ msg_bad1 <- "kutxak badaude, baina ez da kutxa diagrama bat"
 msg_bad2 <- "non dakustazu hodeia?"
 msg_bad3 <- "marra bertikalak badira, baina ez da erantzun zuzena"
 msg_success <- "oso ondo!"
-test_mc(correct = 4, feedback_msgs = c(msg_bad1,msg_bad2,msg_bad3,msg_success))
+test_mc(correct = 4, feedback_msgs = c(msg_bada,msg_badb,msg_badc,msg_success))
 
 ---
 
