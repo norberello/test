@@ -86,7 +86,7 @@ key: 95cce18282
 xp: 100
 ```
 
-Ikerlari batek beroa eta delituak gertatzearen arteko erlazioa ulertu nahi du. Horretarako 2003-2013 urteen arteko delitu guztiak (hauek delituen kategoria guztiak izanik) bildu eta batazbesteko tenperaturaren arauera taldekatu ditu daukazu kargatutako `data.tenp` databankuan(datuak webgune honetatik atera dira [](http://crime.static-eric.com).
+Ikerlari batek beroa eta delituak gertatzearen arteko erlazioa ulertu nahi du. Horretarako 2003-2013 urteen arteko delitu guztiak (hauek delituen kategoria guztiak izanik) bildu eta batazbesteko tenperaturaren arauera taldekatu ditu daukazu kargatutako `data.chicago` databankuan (datuak webgune honetatik atera dira [](http://crime.static-eric.com).
 
 `@instructions`
 - Egin sakabatze diagrama bat bi aldagairen artean korrelazio analisia erabakitzeko
@@ -94,7 +94,7 @@ Ikerlari batek beroa eta delituak gertatzearen arteko erlazioa ulertu nahi du. H
 
 `@hint`
 - Erabili $ behar dituzun zutabeak (aldagaiak) aukeratzeko
-- Linealtasunik ez badago erabili "spearman" korrelazioa
+- Linealtasunik ez badago erabili "spearman" korrelazioa `cor.test` komandoarekin
 
 `@pre_exercise_code`
 ```{r}
