@@ -462,8 +462,8 @@ hist(df)
 `@sct`
 ```{r}
 test_error()
-success_msg("Bai, hori da! Oso ondo ari zara!!")
-test_function("range", incorrect_msg = "zerbait txarto dago. Erabili al dozu `range` komandoa?. Begiratu instrukzioak berriro")
-test_function("median", incorrect_msg = "zerbait txarto dago. Erabili al dozu `median` komandoa?. Begiratu instrukzioak berriro")
-test_function("hist", incorrect_msg = "zerbait txarto dago. Erabili al dozu `hist` komandoa?. Begiratu instrukzioak berriro")
+#success_msg("Bai, hori da! Oso ondo ari zara!!")
+#test_function("range", incorrect_msg = "zerbait txarto dago. Erabili al dozu `range` komandoa?. Begiratu instrukzioak berriro")
+#test_function("median", incorrect_msg = "zerbait txarto dago. Erabili al dozu `median` komandoa?. Begiratu instrukzioak berriro")
+#test_function("hist", incorrect_msg = "zerbait txarto dago. Erabili al dozu `hist` komandoa?. Begiratu instrukzioak berriro")
 ```
