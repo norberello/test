@@ -206,8 +206,8 @@ cor.test(__________,___________,method="spearman")
 
 `@solution`
 ```{r}
-plot(data.chicago$tenp,data.chicago$Krimen)
-cor.test(data.chicago$tenp,data.chicago$Krimen,method="spearman")
+plot(data.chicago$tenp,data.chicago$krimen)
+cor.test(data.chicago$tenp,data.chicago$krimen,method="spearman")
 ```
 
 `@sct`
