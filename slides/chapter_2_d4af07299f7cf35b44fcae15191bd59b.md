@@ -21,9 +21,24 @@ Ni naiz naizena
 
 
 ---
-## - Danak berdinak ez gara, baina...
+## Zorteon...
 
-**si la muca fa mu, il melo fa me?!**
+```yaml
+type: "FullImageSlide"
+key: "0403aaaba6"
+center_content: true
+```
+
+`@part1`
+hey lehenengo partea
+
+
+`@script`
+
+
+
+---
+## - Danak berdinak ez gara, baina...
 
 ```yaml
 type: "FinalSlide"
