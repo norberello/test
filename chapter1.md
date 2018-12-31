@@ -437,7 +437,9 @@ pistak dagoeneko emanda daude instrukziotan
 
 `@pre_exercise_code`
 ```{r}
-df <- read.csv("https://assets.datacamp.com/production/repositories/2196/datasets/b523206fe67d2049000ebd1fb4e9c21ab93e2b3e/megasinple.csv")
+https://assets.datacamp.com/production/repositories/2196/datasets/91819c978e17b3c7e088273267c86cf47d6dcfcb/testdatacamp.R
+
+#df <- read.csv("https://assets.datacamp.com/production/repositories/2196/datasets/b523206fe67d2049000ebd1fb4e9c21ab93e2b3e/megasinple.csv")
 #download.file(
   "https://assets.datacamp.com/production/repositories/2196/datasets/b523206fe67d2049000ebd1fb4e9c21ab93e2b3e/megasinple.csv", 
   "df3.csv")
