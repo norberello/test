@@ -38,10 +38,10 @@ ez da hodei diagrama
 
 `@feedback`
 msg_bad <- "ez, ez da zuzena, pentsatu apur bat"
-#msg_bad2 <- "non dakustazu hodeia?"
-#msg_bad3 <- "marra bertikalak badira, baina ez da erantzun zuzena"
+msg_bad2 <- "non dakustazu hodeia?"
+msg_bad3 <- "marra bertikalak badira, baina ez da erantzun zuzena"
 msg_success <- "oso ondo!"
-test_mc(correct = 4, feedback_msgs = c(msg_bad,msg_bad,msg_bad,msg_success))
+test_mc(correct = 4, feedback_msgs = c(msg_bad,msg_bad2,msg_bad3,msg_success))
 
 ---
 
