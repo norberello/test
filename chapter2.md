@@ -37,11 +37,10 @@ ez da hodei diagrama
 - [histograma]
 
 `@feedback`
-msg_bad <- "ez, ez da zuzena, pentsatu apur bat"
-msg_bad2 <- "non dakustazu hodeia?"
-msg_bad3 <- "marra bertikalak badira, baina ez da erantzun zuzena"
+#https://www.r-project.org/conferences/useR-2015/presentations/245.pdf
+msg_bad <- "ez, pentsatu pixkat, oso erraza da"
 msg_success <- "oso ondo!"
-test_mc(correct = 4, feedback_msgs = c(msg_bad,msg_bad2,msg_bad3,msg_success))
+test_mc(correct = 4, feedback_msgs = c(msg_bad,msg_bad, msg_bad,msg_success))
 
 ---
 
