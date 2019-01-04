@@ -28,7 +28,7 @@ xp: 50
 Begiratu goiko diagrama, zer da?
 
 `@hint`
-ez da hodei diagrama
+ez da hodei diagrama bat
 
 `@possible_answers`
 - Kutxa diagrama
