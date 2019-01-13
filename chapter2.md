@@ -3,7 +3,7 @@ title: 'Banaketa normala'
 description: 'Inor ez da normala edo denak normalak gara konfindantza tarte batean?'
 ---
 
-## Normala al zara?
+## Normala al zara, Barbara?
 
 ```yaml
 type: VideoExercise
