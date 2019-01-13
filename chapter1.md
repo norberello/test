@@ -26,7 +26,7 @@ key: d7b23bb131
 xp: 50
 ```
 
-Aukeratu zentro joerako neurri bat
+Aukeratu zentro joerako neurri bat aukeren artean
 
 `@possible_answers`
 1. [batezbestekoa]
