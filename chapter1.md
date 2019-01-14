@@ -5,6 +5,19 @@ attachments:
     slides_link: 'https://s3.amazonaws.com/assets.datacamp.com/course/teach/slides_example.pdf'
 ---
 
+## Hum, testaren testa, nola jaten da hori?
+
+```yaml
+type: VideoExercise
+key: d372802007
+xp: 50
+```
+
+`@projector_key`
+16f90ed64b5dcd43b615e5d6a918f0f7
+
+---
+
 ## Zentro joerako estimazioa
 
 ```yaml
@@ -75,7 +88,7 @@ altuera<-c(1.6,1.9,1.6,1.6)
 
 `@sample_code`
 ```{r}
-altuera<-c(___,___,___,___)
+_______<-c(___,___,___,___)
 #kalkulatu altueraren batazbestekoa
 
 ```
@@ -88,9 +101,11 @@ mean(altuera)
 
 `@sct`
 ```{r}
+test_object("altuera", incorrect_msg = "`altuera`-ri balio zuzenak esleiu dizkiozu?")
+test_function("mean", incorrect_msg = "zerbait txarto dago. Erabili al dozu `mean` komandoa?. Begiratu instrukzioak berriro")
 test_error()
 success_msg("Bai, hori da! Oso ondo ari zara!")
-test_function("mean", incorrect_msg = "zerbait txarto dago. Erabili al dozu `mean` komandoa?. Begiratu instrukzioak berriro")
+
 ```
 
 ---
@@ -590,16 +605,3 @@ test_error()
 #test_function("median", incorrect_msg = "zerbait txarto dago. Erabili al dozu `median` komandoa?. Begiratu instrukzioak berriro")
 #test_function("hist", incorrect_msg = "zerbait txarto dago. Erabili al dozu `hist` komandoa?. Begiratu instrukzioak berriro")
 ```
-
----
-
-## Insert exercise title here
-
-```yaml
-type: VideoExercise
-key: d372802007
-xp: 50
-```
-
-`@projector_key`
-16f90ed64b5dcd43b615e5d6a918f0f7
