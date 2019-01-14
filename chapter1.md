@@ -129,7 +129,7 @@ Akohola arazoak dauzkaten 4262 helduez osatuta dagoen lagin bat daukazu non pert
  Orain `chisq.test(alk.taula)` idatzi kontsolan eta aukeratu erantzun zuzena
 
 `@possible_answers`
-- [Alkohola tratamendua eta atxilotuta izatearekin ez dago lotura esanguratsurik] 
+- Alkohola tratamendua eta atxilotuta izatearekin ez dago lotura esanguratsurik
 - Alkohola tratamendua eta atxilotuta izatearekin lotura esanguratsua dago
 - Testak ez du neurtzen alcohola tratamendua eta atxilotuta izatearekiko erlazioa
 
@@ -146,9 +146,20 @@ print(alk.taula)
 
 `@sct`
 ```{r}
-msg_bad <- "ez da zuzena!"
-msg_success <- "Bai! Oso ondo ari zara!"
-test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad))
+#https://www.r-project.org/conferences/useR-2015/presentations/245.pdf
+msg1 = "bai, halaxe da, batazbestekoa aldagai jarrai baten erdia errepesenta dezake"
+msg2 = "bai, p balioa oso txikia da, probabilide oso handia dago erlaziorik ez egoteko"
+msg3 = "ez, estatistiko batek ez du zentro joerako informaziorik ematen"
+
+test_mc(correct = 2, feedback_msgs = c(msg1,msg2,msg3))
+
+# Final message the student will see upon completing the exercise
+success_msg("Oso ondo gabilondo!")
+
+
+#msg_bad <- "ez da zuzena!"
+#msg_success <- "Bai! Oso ondo ari zara!"
+#test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad))
 ```
 
 ---
