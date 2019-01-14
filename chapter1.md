@@ -131,7 +131,7 @@ Akohola arazoak dauzkaten 4262 helduez osatuta dagoen lagin bat daukazu non pert
 `@possible_answers`
 - Alkohola tratamendua eta atxilotuta izatearekin ez dago lotura esanguratsurik
 - Alkohola tratamendua eta atxilotuta izatearekin lotura esanguratsua dago
-- Testak ez du neurtzen alcohola tratamendua eta atxilotuta izatearekiko erlazioa
+- Testak ez du neurtzen alkohola tratamendua eta atxilotuta izatearekiko erlazioa
 
 `@hint`
 ezin da errazagoa izan, pentsatu!
@@ -147,9 +147,9 @@ print(alk.taula)
 `@sct`
 ```{r}
 #https://www.r-project.org/conferences/useR-2015/presentations/245.pdf
-msg1 = "bai, halaxe da, batazbestekoa aldagai jarrai baten erdia errepesenta dezake"
-msg2 = "bai, p balioa oso txikia da, probabilide oso handia dago erlaziorik ez egoteko"
-msg3 = "ez, estatistiko batek ez du zentro joerako informaziorik ematen"
+msg1 = "ez, ez da zuzena"
+msg2 = "bai, p balioa oso txikia da, hau da, probabilitate txikiegia da erlaziorik ez egoteko"
+msg3 = "ez, ez zaude zuzen, testa informazio horrekin erlazionaturik dago"
 
 test_mc(correct = 2, feedback_msgs = c(msg1,msg2,msg3))
 
