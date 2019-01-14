@@ -101,7 +101,7 @@ mean(altuera)
 
 `@sct`
 ```{r}
-test_object("altuera", incorrect_msg = "`altuera`-ri balio zuzenak esleiu dizkiozu? Altuerak eskatu bezala jarri behar dituzu")
+test_object("altuera", incorrect_msg = "`altuera`-ri balio zuzenak esleiu dizkiozu? Altuerak eskatu bezala jarri behar dituzu")#honek funtzionatzen du, balioak gaizki idatziz gero mezu hau agertzen da :)
 test_function("mean", incorrect_msg = "zerbait txarto dago. Erabili al dozu `mean` komandoa <altuera>n?. Begiratu instrukzioak berriro")
 test_output_contains("mean(altuera)", incorrect_msg = "Erabili al duzu `mean()``altuera`n?")  
 test_error()
