@@ -149,7 +149,7 @@ print(alk.taula)
 #https://www.r-project.org/conferences/useR-2015/presentations/245.pdf
 msg1 = "ez, ez da zuzena, saiatu berriz"
 msg2 = "bai, p balioa oso txikia da, hau da, probabilitate txikiegia da erlaziorik ez egoteko"
-msg3 = "ez, ez zaude zuzen, testa informazio horrekin erlazionaturik dago"
+msg3 = "ez, ez zaude zuzen, Chi karratuaren testa informazio horrekin erlazionaturik dago"
 
 test_mc(correct = 2, feedback_msgs = c(msg1,msg2,msg3))
 
