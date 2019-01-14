@@ -195,6 +195,23 @@ Begiratu eskuman daukazun grafikoa, zein erregresio mota da?
 temp<-c(-5,-1,-2,0,2,2,4,4,5,5,7,7,9,9,12,14,15,14,20,25,30)
 cond<-c(1,1,1,1,1,1,1,1,1,0,1,0,1,0,0,0,0,0,0,0,0)
 
+#ggplot works great
+# Create a temporary data frame of hypothetical values
+temp.data <- data.frame(temp = seq(-5, 30, 0.5))
+
+# Predict the fitted values given the model and hypothetical data
+predicted.data <- as.data.frame(predict(model.con.B, newdata = temp.data, 
+                                        type="link", se=TRUE))
+
+# Combine the hypothetical data and predicted values
+new.data <- cbind(temp.data, predicted.data)
+
+# Calculate confidence intervals
+std <- qnorm(0.95 / 2 + 0.5)
+new.data$ymin <- model.con.B$family$linkinv(new.data$fit - std * new.data$se)
+new.data$ymax <- model.con.B$family$linkinv(new.data$fit + std * new.data$se)
+new.data$fit <- model.con.B$family$linkinv(new.data$fit)  # Rescale to 0-1
+
 # Plot everything
 library(ggplot2)
 p <- ggplot(dat, aes(x=temp, y=cond)) 
