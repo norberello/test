@@ -194,21 +194,22 @@ Begiratu eskuman daukazun grafikoa, zein erregresio mota da?
 
 temp<-c(-5,-1,-2,0,2,2,4,4,5,5,7,7,9,9,12,14,15,14,20,25,30)
 cond<-c(1,1,1,1,1,1,1,1,1,0,1,0,1,0,0,0,0,0,0,0,0)
-#dat=as.data.frame(cbind(bodysize,survive)) # saves dataframe with two columns: body size & survival
 
-model.con<-glm(cond ~ temp, family = binomial(link = "logit"))
-#why not simply family=binomial?
-summary(model.con)
+# Plot everything
+library(ggplot2)
+p <- ggplot(dat, aes(x=temp, y=cond)) 
+p + geom_point() + 
+  geom_ribbon(data=new.data, aes(y=fit, ymin=ymin, ymax=ymax), alpha=0.5) + 
+  geom_line(data=new.data, aes(y=fit)) + 
+  labs(x="Temperature", y="probability of condensation on windows")
 
-#plot(model.con)
-#anova(model.con, test="Chisq")
 
-plot(temp,cond,xlab="Temperature",ylab="Probability of condensation") # plot with body size on x-axis and survival (0 or 1) on y-axis
-#g=glm(survive~bodysize,family=binomial,dat) # run a logistic regression model (in this case, generalized linear model with logit link). see ?glm
 
-curve(predict(model.con,data.frame(temp=x),type="resp"),add=TRUE) # draws a curve based on prediction from logistic regression model
-#cool
-#ggplot(movies, aes(x = runtime, y = rating, col = genre)) + geom_point()
+
+
+
+
+
 ```
 
 `@sct`
