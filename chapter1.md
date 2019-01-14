@@ -187,15 +187,14 @@ Begiratu eskuman daukazun grafikoa, zein erregresio mota da?
 
 `@pre_exercise_code`
 ```{r}
-# The pre exercise code runs code to initialize the user's workspace.
-# You can use it to load packages, initialize datasets and draw a plot in the viewer
-
-#movies <- #read.csv("http://s3.amazonaws.com/assets.datacamp.com/course/introduction_to_r/movies.csv")
-
 temp<-c(-5,-1,-2,0,2,2,4,4,5,5,7,7,9,9,12,14,15,14,20,25,30)
 cond<-c(1,1,1,1,1,1,1,1,1,0,1,0,1,0,0,0,0,0,0,0,0)
 
 #ggplot works great
+#let's put a dataframe with the two things together
+dat=as.data.frame(cbind(temp,cond))
+model.con.B<-glm(cond ~ temp, family = binomial(link = "logit"),data=dat)
+
 # Create a temporary data frame of hypothetical values
 temp.data <- data.frame(temp = seq(-5, 30, 0.5))
 
