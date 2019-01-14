@@ -183,7 +183,7 @@ Begiratu eskuman daukazun grafikoa, zein erregresio mota da?
 - Power regresssion
 
 `@hint`
-`summary(model.con)`
+idatzi kontsolan `summary(model.con)` eta ikasi ateraldia
 
 `@pre_exercise_code`
 ```{r}
