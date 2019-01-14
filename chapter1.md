@@ -213,10 +213,21 @@ curve(predict(model.con,data.frame(temp=x),type="resp"),add=TRUE) # draws a curv
 
 `@sct`
 ```{r}
+#https://www.r-project.org/conferences/useR-2015/presentations/245.pdf
+msg1 = "ez, non dakustazu zuzen bat?"
+msg2 = "halaxe da!"
+msg3 = "ez, nahiz eta curbaren parte bat esponentziala eman, ez da hori"
+msg4 = "ez da hori, saiatu berriz"
+
+test_mc(correct = 2, feedback_msgs = c(msg1,msg2,msg3,msg4))
+
+# Final message the student will see upon completing the exercise
+success_msg("Bai hori da, erregresio logistikoa!")
+
 # SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
-msg_bad <- "ez da zuzena!"
-msg_success <- "Bai! Oso ondo ari zara!"
-test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad,msg_bad))
+#msg_bad <- "ez da zuzena!"
+#msg_success <- "Bai! Oso ondo ari zara!"
+#test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad,msg_bad))
 ```
 
 ---
