@@ -154,7 +154,7 @@ msg3 = "ez, ez zaude zuzen, Chi karratuaren testa informazio horrekin erlazionat
 test_mc(correct = 2, feedback_msgs = c(msg1,msg2,msg3))
 
 # Final message the student will see upon completing the exercise
-success_msg("Oso ondo gabilondo!")
+success_msg("Oso ondo gabilondo!Probabilitate txikiegia da erlaziorik ez egoteko")
 
 
 #msg_bad <- "ez da zuzena! Saiatu berriz"
