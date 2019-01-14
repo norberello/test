@@ -217,7 +217,7 @@ p <- ggplot(dat, aes(x=temp, y=cond))
 p + geom_point() + 
   geom_ribbon(data=new.data, aes(y=fit, ymin=ymin, ymax=ymax), alpha=0.5) + 
   geom_line(data=new.data, aes(y=fit)) + 
-  labs(x="Temperature", y="probability of condensation on windows")
+  labs(x="tenperatua", y="leioak kondentsatzeko probabilitatea")
 
 
 
