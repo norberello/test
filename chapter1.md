@@ -222,7 +222,7 @@ msg4 = "ez da hori, saiatu berriz"
 test_mc(correct = 2, feedback_msgs = c(msg1,msg2,msg3,msg4))
 
 # Final message the student will see upon completing the exercise
-success_msg("Bai hori da, erregresio logistikoa!")
+success_msg("Bai hori da, erregresio logistikoa! erregresio binomiala ere deituta")
 
 # SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
 #msg_bad <- "ez da zuzena!"
