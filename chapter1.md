@@ -88,6 +88,7 @@ altuera<-c(1.6,1.9,1.6,1.6)
 
 `@sample_code`
 ```{r}
+#gorde lau balioak altuera izeneko aldagai batean
 _______<-c(___,___,___,___)
 #kalkulatu altueraren batazbestekoa
 
