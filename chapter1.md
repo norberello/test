@@ -275,8 +275,8 @@ xp: 50
 ```
 
 `@instructions`
-Marraztu datuak kutxa diagrama batean `boxplot
-()` erabiliz
+1. Ikusi kontigentzi taula `print()` erabiliz
+2. Marraztu datuak kutxa diagrama batean `boxplot()` erabiliz
 
 `@hint`
 barruan jarri irizpide aldagaia eta datu objetua dagozkion lekuan
