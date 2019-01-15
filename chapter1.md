@@ -264,6 +264,7 @@ Alkohol Kontsumoaren genero desberdintasunak ote dauden aztertu nahi dugu batez 
 alkohol<-c(0,0,1,1,2,0,6,7,15,9,2,4,0,0)
 sex<-c(rep("emakume",6),rep("gizon",8))
 alk.datoak<-data.frame(alkohol,sex)
+print(alk.datoak)
 ```
 
 ***
@@ -275,7 +276,8 @@ xp: 50
 ```
 
 `@instructions`
-Marraztu datuak kutxa diagrama batean boxplot erabilita
+Marraztu datuak kutxa diagrama batean `boxplot
+()` erabiliz
 
 `@hint`
 barruan jarri irizpide aldagaia eta datu objetua dagozkion lekuan
