@@ -5,6 +5,19 @@ attachments:
     slides_link: 'https://s3.amazonaws.com/assets.datacamp.com/course/teach/slides_example.pdf'
 ---
 
+## Insert exercise title here
+
+```yaml
+type: VideoExercise
+key: bf608e859e
+xp: 50
+```
+
+`@projector_key`
+e8680b4278dd573b8501262c87b3da05
+
+---
+
 ## Zentro joerako estimazioa
 
 ```yaml
@@ -636,16 +649,3 @@ test_error()
 #test_function("median", incorrect_msg = "zerbait txarto dago. Erabili al dozu `median` komandoa?. Begiratu instrukzioak berriro")
 #test_function("hist", incorrect_msg = "zerbait txarto dago. Erabili al dozu `hist` komandoa?. Begiratu instrukzioak berriro")
 ```
-
----
-
-## Insert exercise title here
-
-```yaml
-type: VideoExercise
-key: bf608e859e
-xp: 50
-```
-
-`@projector_key`
-e8680b4278dd573b8501262c87b3da05
