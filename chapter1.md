@@ -279,7 +279,7 @@ xp: 50
 2. Marraztu datuak kutxa diagrama batean `boxplot()` erabiliz
 
 `@hint`
-barruan jarri irizpide aldagaia eta datu objetua dagozkion lekuan
+``barruan`` jarri irizpide aldagaia eta datu objetua dagozkion lekuan
 
 `@sample_code`
 ```{r}
@@ -296,10 +296,14 @@ boxplot(alkohol~sex,data=alk.datoak,
 
 `@sct`
 ```{r}
+test_output_contains("print(alk.datoak)", incorrect_msg = "Erabili al duzu `print()``alk.datoak`datobasean? Beharbada 'alk.datoak' ez duzu ondo idatzi")#honek ere funtzionatzen du: mean idatziz gero, baina ez altuera, mezu hau agertzen da!!  
+test_output_contains("boxplot(alkohol~sex,data=alk.datoak,
+        ylab="edari kopurua",xlab="sex",main="generoen arteko alkohol kontsumoa")", incorrect_msg = "Idatzi al duzu <alkohola> behar den lekuan? Erabili al duzu `boxplot()``alk.datoak`datobasean? Beharbada 'alk.datoak' ez duzu ondo idatzi")#honek ere funtzionatzen du: mean idatziz gero, baina ez altuera, mezu hau agertzen da!!  
+
 # SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
 #hau ez zait agertzen!
-msg_bad <- "ez da zuzena!"
-msg_success <- "Bai! Oso ondo ari zara!"
+msg_bad <- "ez da zuzena! zerbait ez duzu ondo egin"
+msg_success <- "Bai! Oso ondo ari zara! Txatxiguai!"
 ```
 
 ***
