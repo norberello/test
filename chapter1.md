@@ -296,7 +296,7 @@ boxplot(alkohol~sex,data=alk.datoak)
 `@sct`
 ```{r}
 test_output_contains("print(alk.datoak)",incorrect_msg = "Erabili al duzu `print()``alk.datoak`datobasean? Beharbada 'alk.datoak' ez duzu ondo idatzi")#honek ere funtzionatzen du: mean idatziz gero, baina ez altuera, mezu hau agertzen da!!  
-test_output_contains("boxplot(alkohol~sex,data=alk.datoak", incorrect_msg = "Idatzi al duzu <alkohola> behar den lekuan? Erabili al duzu `boxplot()``alk.datoak`datobasean? Beharbada 'alk.datoak' ez duzu ondo idatzi")#honek ere funtzionatzen du: mean idatziz gero, baina ez altuera, mezu hau agertzen da!!  
+test_output_contains("boxplot(alkohol~sex,data=alk.datoak)", incorrect_msg = "Idatzi al duzu <alkohola> behar den lekuan? Erabili al duzu `boxplot()``alk.datoak`datobasean? Beharbada 'alk.datoak' ez duzu ondo idatzi")#honek ere funtzionatzen du: mean idatziz gero, baina ez altuera, mezu hau agertzen da!!  
 
 test_error()
 success_msg("Bai, hori da! Oso ondo ari zara barrabarra!")
