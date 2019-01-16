@@ -275,7 +275,7 @@ xp: 50
 ```
 
 `@instructions`
-1. Ikusi kontigentzi taula `print()` erabiliz
+1. Ikusi kontigentzi taula `print()` erabiliz `alk.datoak` datubasean
 2. Marraztu datuak kutxa diagrama batean `boxplot()` erabiliz
 
 `@hint`
@@ -283,7 +283,7 @@ barruan jarri irizpide aldagaia eta datu objetua dagozkion lekuan
 
 `@sample_code`
 ```{r}
-print(alk.datoak)
+print(______)
 boxplot(_______~sex,data=_____,
         ylab="edari kopurua",xlab="sex",main="generoen arteko alkohol kontsumoa")
 ```
