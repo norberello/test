@@ -285,14 +285,12 @@ parentisen barruan idatzi datu taularen izena `alk.datoak`
 `@sample_code`
 ```{r}
 print(______)
-boxplot(_______~sex,data=_____,
-        ylab="edari kopurua",xlab="sex",main="generoen arteko alkohol kontsumoa")
+boxplot(_______~sex,data=_____)
 ```
 
 `@solution`
 ```{r}
-boxplot(alkohol~sex,data=alk.datoak,
-        ylab="edari kopurua",xlab="sex",main="generoen arteko alkohol kontsumoa")
+boxplot(alkohol~sex,data=alk.datoak)
 ```
 
 `@sct`
