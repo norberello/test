@@ -5,19 +5,6 @@ attachments:
     slides_link: 'https://s3.amazonaws.com/assets.datacamp.com/course/teach/slides_example.pdf'
 ---
 
-## The video isn't working!!
-
-```yaml
-type: VideoExercise
-key: bf608e859e
-xp: 50
-```
-
-`@projector_key`
-e8680b4278dd573b8501262c87b3da05
-
----
-
 ## checking uploaded data
 
 ```yaml
