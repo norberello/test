@@ -65,7 +65,7 @@ key: 91a0ce1c93
 xp: 100
 ```
 
-EHko udalerrien delituen indizea `data` datubasean kargatuta daukazu. Ikus dezakgun nola delitu indize balioak sakabanatuta dauden.
+EH-ko udalerrien delituen indizea `data` datubasean kargatuta daukazu dagoeneko. Ikus dezagun nola delitu indize balioak sakabanatuta dauden.
 
 `@instructions`
 Erabili `hist()` delitu indizeen histograma bat biltzeko
