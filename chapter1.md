@@ -336,14 +336,14 @@ boxplot(alkohol~sex,data=alk.datoak)
 `@sct`
 ```{r}
 # first instruction
-test_student_typed("print(alk.datoak)", not_typed_msg = "zerbait txarto idatzi duzu, begiratu berriro <print()> ondo erabili duzun ala ez")
+#test_student_typed("print(alk.datoak)", not_typed_msg = "zerbait txarto idatzi duzu, #begiratu berriro <print()> ondo erabili duzun ala ez")
 
 # second instruction
-test_student_typed("boxplot(alkohol~sex,data=alk.datoak)", not_typed_msg = "`boxplot` komandoan zerbait ez dago zuzen")
+#test_student_typed("boxplot(alkohol~sex,data=alk.datoak)", not_typed_msg = "`boxplot` #komandoan zerbait ez dago zuzen")
 
-test_output_contains("print(alk.datoak)",incorrect_msg = "Erabili al duzu `print()``alk.datoak`datobasean? Beharbada 'alk.datoak' ez duzu ondo idatzi")#honek ere funtzionatzen du: mean idatziz gero, baina ez altuera, mezu hau agertzen da!!  
+#test_output_contains("print(alk.datoak)",incorrect_msg = "Erabili al duzu #`print()``alk.datoak`datobasean? Beharbada 'alk.datoak' ez duzu ondo idatzi")#honek ere #funtzionatzen du: mean idatziz gero, baina ez altuera, mezu hau agertzen da!!  
 
-test_output_contains("boxplot(alkohol~sex,data=alk.datoak)", incorrect_msg = "Idatzi al duzu <alkohola> behar den lekuan? Erabili al duzu `boxplot()``alk.datoak`datobasean? Beharbada 'alk.datoak' ez duzu ondo idatzi")#honek ere funtzionatzen du: mean idatziz gero, baina ez altuera, mezu hau agertzen da!!  
+#test_output_contains("boxplot(alkohol~sex,data=alk.datoak)", incorrect_msg = "Idatzi al duzu <alkohola> behar den lekuan? Erabili al duzu `boxplot()``alk.datoak`datobasean? Beharbada 'alk.datoak' ez duzu ondo idatzi")#honek ere funtzionatzen du: mean idatziz gero, baina ez altuera, mezu hau agertzen da!!  
 
 test_error()
 success_msg("Bai, hori da! Oso ondo ari zara barrabarra!")
