@@ -38,9 +38,15 @@ ez da hodei diagrama bat
 
 `@feedback`
 #https://www.r-project.org/conferences/useR-2015/presentations/245.pdf
-msg_bad <- "ez, pentsatu pixkat, oso erraza da"
-msg_success <- "oso ondo!"
-test_mc(correct = 4, feedback_msgs = c(msg_bad,msg_bad,msg_bad,msg_success))
+msg1 = "hurbil, baino ez"
+msg2 = "hum, ez, non dakustazu hodeia?"
+msg3 = "bai marrak daude, baina hori ez da bilatzen dudan erantzuna"
+msg4 = "yes!"
+
+test_mc(correct = 4, feedback_msgs = c(msg1,msg2,msg3,msg4))
+
+# Final message the student will see upon completing the exercise
+success_msg("Oso zuhur txapeldun!")
 
 ---
 
