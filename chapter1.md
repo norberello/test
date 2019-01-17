@@ -677,7 +677,7 @@ xp: 100
 This is a test exercise to check whether a file can be uploaded and used in an exercise (cause I have problems with it)
 
 `@instructions`
-check the first 6 lines of the dataframe object ``dat`a`
+Check the first 6 lines of the dataframe object called `data` using the command `head`
 
 `@hint`
 use `head()` on `data` and you're done
