@@ -420,11 +420,13 @@ key: 0027829053
 ```
 
 `@instructions`
-Orain grafiko bera egin `ggplot2` library erabilita
+Orain grafiko bera egin `ggplot2` library erabilita:
+1. `ggplot2` paketea deitu `library` komandoa idatziz
+2. `ggplot2()` erabili eskatzen den grafikoa egiteko
 
 `@hint`
 1. ggplot2 jarri behar den lekuan
-2. jarri "___" eta "___" lekuan dagozkion aldagaiak
+2. jarri "___" eta "___" lekuan dagozkion aldagaiak (x = aldagai askea, y = menpeko aldagaia)
 
 `@sample_code`
 ```{r}
