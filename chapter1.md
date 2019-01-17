@@ -318,7 +318,7 @@ xp: 50
 2. Marraztu datuak kutxa diagrama batean `boxplot()` erabiliz
 
 `@hint`
-parentisen barruan idatzi datu taularen izena ```alk.datoak`
+parentisen barruan idatzi datu taularen izena `alk.datoak`
 `alkohola` irizpide aldagaia eta datu objetua ipini dagozkion lekuan
 
 `@sample_code`
