@@ -81,7 +81,7 @@ data <-read.csv(url("https://assets.datacamp.com/production/repositories/2196/da
 `@sample_code`
 ```{r}
 #bildu delitu indizeen histograma
-
+hist(____)
 ```
 
 `@solution`
