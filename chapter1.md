@@ -731,3 +731,16 @@ test_error()
 #test_function("median", incorrect_msg = "zerbait txarto dago. Erabili al dozu `median` komandoa?. Begiratu instrukzioak berriro")
 #test_function("hist", incorrect_msg = "zerbait txarto dago. Erabili al dozu `hist` komandoa?. Begiratu instrukzioak berriro")
 ```
+
+---
+
+## bideotxurro
+
+```yaml
+type: VideoExercise
+key: 88e46eb5a9
+xp: 50
+```
+
+`@projector_key`
+5b9ca0856a6230629c9ce5485cf31980
