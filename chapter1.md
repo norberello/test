@@ -75,7 +75,7 @@ erabili `hist` komandoa `data` objetuan, objetua parentesisen artean jarri behar
 
 `@pre_exercise_code`
 ```{r}
-data <-read.csv(url("https://assets.datacamp.com/production/repositories/2196/datasets/b523206fe67d2049000ebd1fb4e9c21ab93e2b3e/megasinple.csv"))
+data <- read.csv(url("https://assets.datacamp.com/production/repositories/2196/datasets/b523206fe67d2049000ebd1fb4e9c21ab93e2b3e/megasinple.csv"))
 ```
 
 `@sample_code`
