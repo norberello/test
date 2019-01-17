@@ -57,7 +57,7 @@ success_msg("good, you did it!")
 
 ---
 
-## histograma bat biltzen
+## Oops, something went wrong. If the problem persists, please report an issue
 
 ```yaml
 type: NormalExercise
@@ -92,7 +92,7 @@ hist(data)
 `@sct`
 ```{r}
 test_error()
-success_msg("super zara!")
+success_msg("good, you did it!")
 ```
 
 ---
