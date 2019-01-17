@@ -18,6 +18,45 @@ e8680b4278dd573b8501262c87b3da05
 
 ---
 
+## checking uploaded data
+
+```yaml
+type: NormalExercise
+key: 6848426fbd
+xp: 100
+```
+
+This is a test-exercise to check whether a file can be uploaded and used in an exercise (cause I have problems with it before)
+
+`@instructions`
+Check the first 6 lines of the dataframe object called `data` using the command `head`
+
+`@hint`
+use `head()` on `data` and you're done
+
+`@pre_exercise_code`
+```{r}
+data <- read.csv(url("https://assets.datacamp.com/production/repositories/2196/datasets/b523206fe67d2049000ebd1fb4e9c21ab93e2b3e/megasinple.csv"))
+```
+
+`@sample_code`
+```{r}
+head(____)
+```
+
+`@solution`
+```{r}
+head(data)
+```
+
+`@sct`
+```{r}
+test_error()
+success_msg("good, you did it!")
+```
+
+---
+
 ## Zentro joerako estimazioa
 
 ```yaml
@@ -662,43 +701,4 @@ test_error()
 #test_function("range", incorrect_msg = "zerbait txarto dago. Erabili al dozu `range` komandoa?. Begiratu instrukzioak berriro")
 #test_function("median", incorrect_msg = "zerbait txarto dago. Erabili al dozu `median` komandoa?. Begiratu instrukzioak berriro")
 #test_function("hist", incorrect_msg = "zerbait txarto dago. Erabili al dozu `hist` komandoa?. Begiratu instrukzioak berriro")
-```
-
----
-
-## checking uploaded data
-
-```yaml
-type: NormalExercise
-key: 6848426fbd
-xp: 100
-```
-
-This is a test exercise to check whether a file can be uploaded and used in an exercise (cause I have problems with it)
-
-`@instructions`
-Check the first 6 lines of the dataframe object called `data` using the command `head`
-
-`@hint`
-use `head()` on `data` and you're done
-
-`@pre_exercise_code`
-```{r}
-data <- read.csv(url("https://assets.datacamp.com/production/repositories/2196/datasets/b523206fe67d2049000ebd1fb4e9c21ab93e2b3e/megasinple.csv"))
-```
-
-`@sample_code`
-```{r}
-head(____)
-```
-
-`@solution`
-```{r}
-head(data)
-```
-
-`@sct`
-```{r}
-test_error()
-success_msg("good, you did it!")
 ```
