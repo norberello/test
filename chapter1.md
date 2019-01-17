@@ -666,7 +666,7 @@ test_error()
 
 ---
 
-## Insert exercise title here
+## checking uploaded data
 
 ```yaml
 type: NormalExercise
@@ -699,5 +699,6 @@ head(data)
 
 `@sct`
 ```{r}
-
+test_error()
+success_msg("good, you did it!")
 ```
