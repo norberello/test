@@ -57,6 +57,45 @@ success_msg("good, you did it!")
 
 ---
 
+## histogram
+
+```yaml
+type: NormalExercise
+key: 91a0ce1c93
+xp: 100
+```
+
+EHko udalerrien delituen indizea `data` datubasean kargatuta daukazu. Ikus dezakgun nola delitu indize balioak sakabanatuta dauden.
+
+`@instructions`
+Erabili `hist()` delitu indizeen histograma bat biltzeko
+
+`@hint`
+erabili `hist` komandoa `data` objetuan, objetua parentesisen artean jarri behar duzu
+
+`@pre_exercise_code`
+```{r}
+data <- read.csv(url("https://assets.datacamp.com/production/repositories/2196/datasets/b523206fe67d2049000ebd1fb4e9c21ab93e2b3e/megasinple.csv"))
+```
+
+`@sample_code`
+```{r}
+#bildu delitu indizeen histograma
+```
+
+`@solution`
+```{r}
+hist(data)
+```
+
+`@sct`
+```{r}
+test_error()
+success_msg("super zara!")
+```
+
+---
+
 ## Zentro joerako estimazioa
 
 ```yaml
