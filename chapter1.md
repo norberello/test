@@ -59,7 +59,7 @@ success_msg("good, you did it!")
 
 ---
 
-## Oops, something went wrong. If the problem persists, please report an issue
+## badabil, dabil
 
 ```yaml
 type: NormalExercise
@@ -73,7 +73,9 @@ EH-ko udalerrien delituen indizea `dat.del` datubasean kargatuta daukazu dagoene
 Erabili `hist()` delitu indizeen histograma bat biltzeko
 
 `@hint`
-erabili `hist` komandoa `data` objetuan, objetua parentesisen artean jarri behar duzu
+1. erabili `hist` komandoa `dat.del` objetuan, objetua parentesisen artean jarri behar duzu
+2. $ erabilten da behar duzun zutabea hautatzeko `dat.del` ondoren
+3. erabili `head()` berriro zutabearen izena ikusteko
 
 `@pre_exercise_code`
 ```{r}
@@ -95,7 +97,7 @@ hist(dat.del$delitu_indizea)
 `@sct`
 ```{r}
 test_error()
-success_msg("good, you did it!")
+success_msg("oso ongi, badabil dabil")
 ```
 
 ---
