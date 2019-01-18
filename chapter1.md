@@ -764,7 +764,7 @@ dat.del fitxategia kargatuta daukazu plataforman
 
 `@pre_exercise_code`
 ```{r}
-dat.del <- read.csv(url("https://assets.datacamp.com/production/repositories/2196/datasets/b523206fe67d2049000ebd1fb4e9c21ab93e2b3e/megasinple.csv"))
+del.dat <- read.csv(url("https://assets.datacamp.com/production/repositories/2196/datasets/b523206fe67d2049000ebd1fb4e9c21ab93e2b3e/megasinple.csv"))
 ```
 
 ***
