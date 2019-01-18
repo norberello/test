@@ -772,7 +772,7 @@ dat.del <- read.csv(url("https://assets.datacamp.com/production/repositories/219
 ```yaml
 type: NormalExercise
 key: 3b4ccaa70b
-xp: 100
+xp: 50
 ```
 
 `@instructions`
@@ -789,6 +789,36 @@ ____.test(del.dat$delitu_indizea)
 `@solution`
 ```{r}
 shapiro.test(del.dat$delitu_indizea)
+```
+
+`@sct`
+```{r}
+test_error()
+success_msg("oso ongi, badabil dabil")
+```
+
+***
+
+```yaml
+type: NormalExercise
+key: 900e000d78
+xp: 50
+```
+
+`@instructions`
+orain calculatu desbiderapen tipikoa
+
+`@hint`
+benetan ez zara oroitzen?
+
+`@sample_code`
+```{r}
+mean(del.dat$delitu_indizea)
+```
+
+`@solution`
+```{r}
+mean(del.dat$delitu_indizea)
 ```
 
 `@sct`
