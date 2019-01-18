@@ -752,7 +752,7 @@ test_error()
 
 ---
 
-## Insert exercise title here
+## iterative tif
 
 ```yaml
 type: BulletExercise
@@ -783,12 +783,12 @@ benetan ez zara oroitzen?
 
 `@sample_code`
 ```{r}
-mean(del.dat$delitu_indizea)
+sd(del.dat$delitu_indizea)
 ```
 
 `@solution`
 ```{r}
-mean(del.dat$delitu_indizea)
+sd(del.dat$delitu_indizea)
 ```
 
 `@sct`
