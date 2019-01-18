@@ -760,11 +760,7 @@ key: f577329362
 xp: 100
 ```
 
-dat.del fitxategia kargatuta daukazu, exploratu nahi duzun gisa, adibidez 
-
-> mean, sd, head, tail, str
-
- erabiliz
+dat.del fitxategia kargatuta daukazu plataforman
 
 `@pre_exercise_code`
 ```{r}
