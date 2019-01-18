@@ -67,7 +67,7 @@ key: 91a0ce1c93
 xp: 100
 ```
 
-EH-ko udalerrien delituen indizea `data` datubasean kargatuta daukazu dagoeneko. Ikus dezagun nola delitu indize balioak sakabanatuta dauden.
+EH-ko udalerrien delituen indizea `dat.del` datubasean kargatuta daukazu dagoeneko. Ikus dezagun nola delitu indize balioak sakabanatuta dauden.
 
 `@instructions`
 Erabili `hist()` delitu indizeen histograma bat biltzeko
@@ -77,19 +77,19 @@ erabili `hist` komandoa `data` objetuan, objetua parentesisen artean jarri behar
 
 `@pre_exercise_code`
 ```{r}
-data <- read.csv(url("https://assets.datacamp.com/production/repositories/2196/datasets/b523206fe67d2049000ebd1fb4e9c21ab93e2b3e/megasinple.csv"))
+dat.del <- read.csv(url("https://assets.datacamp.com/production/repositories/2196/datasets/b523206fe67d2049000ebd1fb4e9c21ab93e2b3e/megasinple.csv"))
 ```
 
 `@sample_code`
 ```{r}
 #bildu delitu indizeen histograma
-hist(____)
+hist(data.del$__________)
 ```
 
 `@solution`
 ```{r}
 #bildu delitu indizeen histograma
-hist(data)
+hist(dat.del$delitu_indizea)
 ```
 
 `@sct`
