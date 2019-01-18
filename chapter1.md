@@ -771,36 +771,6 @@ dat.del <- read.csv(url("https://assets.datacamp.com/production/repositories/219
 
 ```yaml
 type: NormalExercise
-key: 3b4ccaa70b
-xp: 50
-```
-
-`@instructions`
-Nola jakingo zenuke datuak normalak diren ala ez matematikoki?
-
-`@hint`
-shapiro-wilk testa da erabili behar duzuna
-
-`@sample_code`
-```{r}
-____.test(del.dat$delitu_indizea)
-```
-
-`@solution`
-```{r}
-shapiro.test(del.dat$delitu_indizea)
-```
-
-`@sct`
-```{r}
-test_error()
-success_msg("oso ongi, badabil dabil")
-```
-
-***
-
-```yaml
-type: NormalExercise
 key: 900e000d78
 xp: 50
 ```
@@ -819,6 +789,36 @@ mean(del.dat$delitu_indizea)
 `@solution`
 ```{r}
 mean(del.dat$delitu_indizea)
+```
+
+`@sct`
+```{r}
+test_error()
+success_msg("oso ongi, badabil dabil")
+```
+
+***
+
+```yaml
+type: NormalExercise
+key: 3b4ccaa70b
+xp: 50
+```
+
+`@instructions`
+Nola jakingo zenuke datuak normalak diren ala ez matematikoki?
+
+`@hint`
+shapiro-wilk testa da erabili behar duzuna
+
+`@sample_code`
+```{r}
+____.test(del.dat$delitu_indizea)
+```
+
+`@solution`
+```{r}
+shapiro.test(del.dat$delitu_indizea)
 ```
 
 `@sct`
