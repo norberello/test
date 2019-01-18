@@ -776,10 +776,10 @@ xp: 100
 ```
 
 `@instructions`
-super, orain oso ondo ezagutzen duzu dena, nola jakingo zenuke datuak normalak diren ala ez matematikoki?
+Nola jakingo zenuke datuak normalak diren ala ez matematikoki?
 
 `@hint`
-shapiro-wilk da erabili behar duzuna
+shapiro-wilk testa da erabili behar duzuna
 
 `@sample_code`
 ```{r}
