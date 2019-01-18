@@ -20,7 +20,7 @@ This is a test-exercise to check whether a file can be uploaded and used in an e
 
 `@instructions`
 1. Check the first 6 lines of the dataframe object called `data` using the command `head`
-2. Now display a histogram to see how data inside is spread
+2. Now display a histogram to see how data inside is spread using `hist()`
 
 `@hint`
 1. use `head()` on `data` 
