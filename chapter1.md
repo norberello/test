@@ -797,5 +797,6 @@ shapiro.test(del.dat$delitu_indizea)
 
 `@sct`
 ```{r}
-
+test_error()
+success_msg("oso ongi, badabil dabil")
 ```
