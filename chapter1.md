@@ -13,7 +13,11 @@ key: 6848426fbd
 xp: 100
 ```
 
-This is a test-exercise to check whether a file can be uploaded and used in an exercise (cause I have problems with it before)
+This is a test-exercise to check whether a file can be uploaded and used in an exercise (cause I have problems with it before). This actually works with no probs, but the next exercise gets the "oops, something went wrong" with the same exact 
+
+> pre-exercise
+
+ code.
 
 `@instructions`
 Check the first 6 lines of the dataframe object called `data` using the command `head`
