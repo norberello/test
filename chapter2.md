@@ -3,6 +3,19 @@ title: 'Banaketa normala'
 description: 'Inor ez da normala edo denak normalak gara konfindantza tarte batean?'
 ---
 
+## empty one
+
+```yaml
+type: VideoExercise
+key: 467ddfd45b
+xp: 50
+```
+
+`@projector_key`
+9c6ca5e5b4bbe8924e528e24fe52c90d
+
+---
+
 ## normaltasun diagrama
 
 ```yaml
@@ -206,16 +219,3 @@ cor.test(data.chicago$tenp,data.chicago$krimen,method="spearman")
 ```{r}
 #https://www.datacamp.com/community/blog/using-datacamp-autograder-teach-r
 ```
-
----
-
-## Insert exercise title here
-
-```yaml
-type: VideoExercise
-key: 467ddfd45b
-xp: 50
-```
-
-`@projector_key`
-9c6ca5e5b4bbe8924e528e24fe52c90d
