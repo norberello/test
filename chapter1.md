@@ -749,3 +749,53 @@ test_error()
 #test_function("median", incorrect_msg = "zerbait txarto dago. Erabili al dozu `median` komandoa?. Begiratu instrukzioak berriro")
 #test_function("hist", incorrect_msg = "zerbait txarto dago. Erabili al dozu `hist` komandoa?. Begiratu instrukzioak berriro")
 ```
+
+---
+
+## Insert exercise title here
+
+```yaml
+type: BulletExercise
+key: f577329362
+xp: 100
+```
+
+dat.del fitxategia kargatuta daukazu, exploratu nahi duzun gisa, adibidez 
+
+> mean, sd, head, tail, str
+
+ erabiliz
+
+`@pre_exercise_code`
+```{r}
+dat.del <- read.csv(url("https://assets.datacamp.com/production/repositories/2196/datasets/b523206fe67d2049000ebd1fb4e9c21ab93e2b3e/megasinple.csv"))
+```
+
+***
+
+```yaml
+type: NormalExercise
+key: 3b4ccaa70b
+xp: 100
+```
+
+`@instructions`
+super, orain oso ondo ezagutzen duzu dena, nola jakingo zenuke datuak normalak diren ala ez matematikoki?
+
+`@hint`
+shapiro-wilk da erabili behar duzuna
+
+`@sample_code`
+```{r}
+____.test(del.dat$delitu_indizea)
+```
+
+`@solution`
+```{r}
+shapiro.test(del.dat$delitu_indizea)
+```
+
+`@sct`
+```{r}
+
+```
