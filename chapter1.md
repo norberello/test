@@ -36,14 +36,12 @@ This is a test-exercise to check whether a file can be uploaded and used in an e
 2. Now display a histogram to see how data inside is spread using `hist()`
 
 `@hint`
-1. use `head()` on `data` 
-2. use `hist()` on `data`
+use `head()` on `data.del` and you're done
 
 `@pre_exercise_code`
 ```{r}
-data <- read.csv(url("https://assets.datacamp.com/production/repositories/2196/datasets/b523206fe67d2049000ebd1fb4e9c21ab93e2b3e/megasinple.csv"))
-data <- gsub(",", "", data)   # remove comma
-data<- as.numeric(data)      # turn into numbers
+dat.del <- read.csv(url("https://assets.datacamp.com/production/repositories/2196/datasets/b523206fe67d2049000ebd1fb4e9c21ab93e2b3e/megasinple.csv"))
+
 ```
 
 `@sample_code`
@@ -53,7 +51,7 @@ head(____)
 
 `@solution`
 ```{r}
-head(data)
+head(dat.del)
 ```
 
 `@sct`
