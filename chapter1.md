@@ -10,7 +10,7 @@ attachments:
 ```yaml
 type: VideoExercise
 key: 88e46eb5a9
-xp: 50
+xp: 25
 ```
 
 `@projector_key`
@@ -23,7 +23,7 @@ xp: 50
 ```yaml
 type: NormalExercise
 key: 6848426fbd
-xp: 100
+xp: 133
 ```
 
 This is a test-exercise to check whether a file can be uploaded and used in an exercise (cause I have problems with it before). 
@@ -64,7 +64,9 @@ success_msg("good, you did it!")
 ```yaml
 type: NormalExercise
 key: 91a0ce1c93
-xp: 100
+xp: 177
+skills: 1
+language: r
 ```
 
 EH-ko udalerrien delituen indizea `dat.del` datubasean kargatuta daukazu dagoeneko. Ikus dezagun nola delitu indize balioak sakabanatuta dauden.
