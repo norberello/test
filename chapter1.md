@@ -13,11 +13,10 @@ key: 6848426fbd
 xp: 100
 ```
 
-This is a test-exercise to check whether a file can be uploaded and used in an exercise (cause I have problems with it before). This actually works with no probs, but the next exercise gets the "oops, something went wrong" with the same exact 
+This is a test-exercise to check whether a file can be uploaded and used in an exercise (cause I have problems with it before). This actually works with no probs, but the next exercise gets,  with the same exact precoded instructions gets the message
 
-> pre-exercise
+![](https://assets.datacamp.com/production/repositories/2196/datasets/9fec7bf70e2a3fe2c50a98c36f841af6e6471382/oops.png)
 
- code.
 
 `@instructions`
 Check the first 6 lines of the dataframe object called `data` using the command `head`
