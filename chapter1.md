@@ -47,13 +47,11 @@ data <- read.csv(url("https://assets.datacamp.com/production/repositories/2196/d
 `@sample_code`
 ```{r}
 head(____)
-hist(____)
 ```
 
 `@solution`
 ```{r}
 head(data)
-hist(data)
 ```
 
 `@sct`
