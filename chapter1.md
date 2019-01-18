@@ -5,7 +5,7 @@ attachments:
     slides_link: 'https://s3.amazonaws.com/assets.datacamp.com/course/teach/slides_example.pdf'
 ---
 
-## bideotxurro
+## bideotxurro, ze ari naz geizki eiten hau ez ikusteko?
 
 ```yaml
 type: VideoExercise
