@@ -19,10 +19,12 @@ This is a test-exercise to check whether a file can be uploaded and used in an e
 
 
 `@instructions`
-Check the first 6 lines of the dataframe object called `data` using the command `head`
+1. Check the first 6 lines of the dataframe object called `data` using the command `head`
+2. Now display a histogram to see how data inside is spread
 
 `@hint`
-use `head()` on `data` and you're done
+1. use `head()` on `data` 
+2. use `hist()` on `data`
 
 `@pre_exercise_code`
 ```{r}
@@ -32,11 +34,13 @@ data <- read.csv(url("https://assets.datacamp.com/production/repositories/2196/d
 `@sample_code`
 ```{r}
 head(____)
+hist(____)
 ```
 
 `@solution`
 ```{r}
 head(data)
+hist(data)
 ```
 
 `@sct`
