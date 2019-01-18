@@ -83,7 +83,7 @@ dat.del <- read.csv(url("https://assets.datacamp.com/production/repositories/219
 `@sample_code`
 ```{r}
 #bildu delitu indizeen histograma
-hist(data.del$__________)
+hist(dat.del$__________)
 ```
 
 `@solution`
