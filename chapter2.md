@@ -219,3 +219,55 @@ cor.test(data.chicago$tenp,data.chicago$krimen,method="spearman")
 ```{r}
 #https://www.datacamp.com/community/blog/using-datacamp-autograder-teach-r
 ```
+
+---
+
+## Bilbo eta bizi itxaropena
+
+```yaml
+type: NormalExercise
+key: 5a901dfe83
+xp: 100
+```
+
+`bilbo.data` kargatuta daukazu ariketerako. Begiratu datuen antolaketa kontsolan head(bilbo.data) begiratuz. Orain aukeratu `renta` aldagaiak auzo baten batazbesteko errenta erresentatzen du eta `gizon` aldagaiak bizi itxaropena. Ba al du errentak eragin positiboak bizi itxaropenean? Has gaitezen figura batekin.
+
+`@instructions`
+1. deitu ggplot2 paketea
+2. marraztu auzoen eragina gizonezko bizi itxaropenean erregresio eredu zuzen batean
+
+`@hint`
+1. jarri parentesisen artean `ggplot2`
+2. begiratu `labs(y ="urteak",x="errenta")`
+
+`@pre_exercise_code`
+```{r}
+library(gsheet)
+bilbo.data<-gsheet2tbl('https://docs.google.com/spreadsheets/d/1VP1ONg1r8N7CryZnBvJgu3CFPhBtu0lfPMbp8ImoMPc/edit?usp=sharing')
+```
+
+`@sample_code`
+```{r}
+#deitu ggplot2 paketea
+library(______)
+ggplot(bilbo.data, aes(x=____, y=____))+
+  geom_point() + stat_smooth(method="lm",se=FALSE,col="red") +
+  labs(y ="urteak",x="errenta")
+
+
+```
+
+`@solution`
+```{r}
+library(ggplot2)
+ggplot(bilbo.data, aes(x=renta,y=gizon))+
+  geom_point() + stat_smooth(method="lm",se=FALSE,col="red") +
+  labs(y = "urteak",x="errenta")
+```
+
+`@sct`
+```{r}
+# General
+test_error()
+success_msg("oso ondo ari zara!")
+```
