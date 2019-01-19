@@ -268,5 +268,5 @@ ggplot(bilbo.data, aes(x=errenta,y=gizon.bizi))+
 ```{r}
 # General
 test_error()
-success_msg("oso ondo ari zara!")
+success_msg("superb!")
 ```
