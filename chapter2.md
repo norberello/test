@@ -254,8 +254,6 @@ library(______)
 ggplot(bilbo.data, aes(x=____, y=____))+
   geom_point() + stat_smooth(method="lm",se=FALSE,col="red") +
   labs(y ="urteak",x="errenta")
-
-
 ```
 
 `@solution`
