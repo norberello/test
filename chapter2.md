@@ -230,7 +230,7 @@ key: 5a901dfe83
 xp: 100
 ```
 
-`bilbo.data` kargatuta daukazu ariketerako. Begiratu datuen antolaketa kontsolan head(bilbo.data) begiratuz. Orain aukeratu `renta` aldagaiak auzo baten batazbesteko errenta erresentatzen du eta `gizon` aldagaiak bizi itxaropena. Ba al du errentak eragin positiboak bizi itxaropenean? Has gaitezen figura batekin.
+`bilbo.data` kargatuta daukazu ariketerako. Begiratu datuen antolaketa kontsolan head(bilbo.data) begiratuz. Orain aukeratu `errenta` aldagaiak auzo baten batazbesteko errenta erresentatzen du eta `gizon.bizi` aldagaiak bizi itxaropena. Ba al du errentak eragin positiboak bizi itxaropenean? Has gaitezen figura batekin.
 
 `@instructions`
 1. deitu ggplot2 paketea
@@ -242,26 +242,26 @@ xp: 100
 
 `@pre_exercise_code`
 ```{r}
-library(gsheet)
+bilbo.data <- read.csv(url("https://assets.datacamp.com/production/repositories/2196/datasets/9dc3ec585e1018a11032ae97a3d6e5f4d0818b8c/bilbo.data.csv"))
 library(ggplot2)
-bilbo.data<-gsheet2tbl('https://docs.google.com/spreadsheets/d/1VP1ONg1r8N7CryZnBvJgu3CFPhBtu0lfPMbp8ImoMPc/edit?usp=sharing')
 ```
 
 `@sample_code`
 ```{r}
 #deitu ggplot2 paketea
-library(______)
-ggplot(bilbo.data, aes(x=____, y=____))+
+library(ggplot2)
+#egin errentaren bizi itxaropenean daukan erregresio zuzenaren figura
+ggplot(bilbo.data, aes(x=____,y=____))+
   geom_point() + stat_smooth(method="lm",se=FALSE,col="red") +
-  labs(y ="urteak",x="errenta")
+  labs(y = "bizi itxaropena",x="errenta maila")
 ```
 
 `@solution`
 ```{r}
 library(ggplot2)
-ggplot(bilbo.data, aes(x=renta,y=gizon))+
+ggplot(bilbo.data, aes(x=errenta,y=gizon.bizi))+
   geom_point() + stat_smooth(method="lm",se=FALSE,col="red") +
-  labs(y = "urteak",x="errenta")
+  labs(y = "bizi itxaropena",x="errenta maila")
 ```
 
 `@sct`
