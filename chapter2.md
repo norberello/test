@@ -230,7 +230,7 @@ key: 5a901dfe83
 xp: 100
 ```
 
-`bilbo.data` kargatuta daukazu ariketerako. Begiratu datuen antolaketa kontsolan head(bilbo.data) begiratuz. Orain aukeratu `errenta` aldagaiak auzo baten batazbesteko errenta erresentatzen du eta `gizon.bizi` aldagaiak bizi itxaropena. Ba al du errentak eragin positiboak bizi itxaropenean? Has gaitezen figura batekin.
+`bilbo.data` kargatuta daukazu ariketerako. Begiratu datuen antolaketa kontsolan `head(bilbo.data)` kontsolan *idatziz*. Orain aukeratu `errenta` aldagaiak auzo baten batazbesteko errenta erresentatzen du eta `gizon.bizi` aldagaiak bizi itxaropena. Ba al du errentak eragin positiboak bizi itxaropenean? Has gaitezen figura batekin.
 
 `@instructions`
 1. deitu ggplot2 paketea
