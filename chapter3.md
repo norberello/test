@@ -28,13 +28,13 @@ bilbo.data <- read.csv(url("https://assets.datacamp.com/production/repositories/
 
 `@sample_code`
 ```{r}
-________<-lm(gizon.bizi~Errenta,data=bilbo.data)
+________<-lm(gizon.bizi~errenta,data=bilbo.data)
 ________(bizi.eredua)
 ```
 
 `@solution`
 ```{r}
-bizi.eredua<-lm(gizon.bizi~Errenta,data=bilbo.data)
+bizi.eredua<-lm(gizon.bizi~errenta,data=bilbo.data)
 summary(bizi.eredua)
 ```
 
