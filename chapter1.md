@@ -10,7 +10,7 @@ attachments:
 ```yaml
 type: VideoExercise
 key: 88e46eb5a9
-xp: 25
+xp: 50
 ```
 
 `@projector_key`
@@ -23,11 +23,10 @@ xp: 25
 ```yaml
 type: NormalExercise
 key: 6848426fbd
-xp: 133
+xp: 100
 ```
 
-This is a test-exercise to check whether a file can be uploaded and used in an exercise (cause I have problems with it before). 
-
+This is a test-exercise to check whether a file can be uploaded and used in an exercise (cause I have problems with it before).
 
 `@instructions`
 1. Check the first 6 lines of the dataframe object called `dat.del` using the command `head`
@@ -64,9 +63,8 @@ success_msg("good, you did it!")
 ```yaml
 type: NormalExercise
 key: 91a0ce1c93
-xp: 177
+xp: 100
 skills: 1
-language: r
 ```
 
 EH-ko udalerrien delituen indizea `dat.del` datubasean kargatuta daukazu dagoeneko. Ikus dezagun nola delitu indize balioak sakabanatuta dauden.
