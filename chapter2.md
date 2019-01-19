@@ -243,6 +243,7 @@ xp: 100
 `@pre_exercise_code`
 ```{r}
 library(gsheet)
+library(ggplot2)
 bilbo.data<-gsheet2tbl('https://docs.google.com/spreadsheets/d/1VP1ONg1r8N7CryZnBvJgu3CFPhBtu0lfPMbp8ImoMPc/edit?usp=sharing')
 ```
 
