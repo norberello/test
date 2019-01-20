@@ -98,17 +98,10 @@ success_msg("Oso ondo, gogoratu R karratua ere begiratu behar dela efektuaren ta
 ## Insert exercise title here
 
 ```yaml
-type: PureMultipleChoiceExercise
-key: b3fb9265bc
+type: VideoExercise
+key: 2cde473db3
 xp: 50
 ```
 
-
-
-`@hint`
-
-
-`@possible_answers`
-
-
-`@feedback`
+`@projector_key`
+02d38ad53fc59e6ab2a127e1731e07f3
