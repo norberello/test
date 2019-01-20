@@ -55,7 +55,7 @@ key: 59c9e7daa2
 xp: 50
 ```
 
-Figura eta emaitzak ikusita zein da erabakia?
+Erabili kontsola `summary(bizi.eredua)` emaitzak berriro ikusteko. Figura eta emaitzak ikusita zein da erabakia?
 
 `@possible_answers`
 1. Bilbo mola mola mola!
@@ -65,9 +65,7 @@ Figura eta emaitzak ikusita zein da erabakia?
 5. Pobrea izatea putada bat da beti
 
 `@hint`
-begiratu ereduaren 
-
-> p < 0.05 esanguratsutasuna erabakitzeko
+begiratu ereduaren `p < 0.05` esanguratsutasuna erabakitzeko
 
 `@pre_exercise_code`
 ```{r}
@@ -92,7 +90,7 @@ msg5 = "arrazoia daukazu, baina, idazkera zientifiko baten zai nago"
 test_mc(correct = 2, feedback_msgs = c(msg1,msg2,msg3,msg4,msg5))
 
 # Final message the student will see upon completing the exercise
-success_msg("Oso ondo gabilondo!")
+success_msg("Oso ondo, gogoratu R karratua ere begiratu behar dela efektuaren tamaina erabakitzeko")
 ```
 
 ---
