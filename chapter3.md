@@ -72,8 +72,7 @@ begiratu ereduaren `p < 0.05` esanguratsutasuna erabakitzeko
 bilbo.data <- read.csv(url("https://assets.datacamp.com/production/repositories/2196/datasets/9dc3ec585e1018a11032ae97a3d6e5f4d0818b8c/bilbo.data.csv"))
 library(ggplot2)
 ggplot(bilbo.data, aes(x=errenta,y=gizon.bizi))+
-  geom_point() + stat_smooth(method="lm",se=FALSE,col="red") +theme_bw()
-  +labs(y = "bizi itxaropena",x="errenta maila")
+  geom_point() + stat_smooth(method="lm",se=FALSE,col="red") +theme_bw()+labs(y = "bizi itxaropena",x="errenta maila")
 bizi.eredua<-lm(gizon.bizi~errenta,data=bilbo.data)
 summary(bizi.eredua)
 ```
