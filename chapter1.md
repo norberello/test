@@ -301,7 +301,7 @@ p <- ggplot(dat, aes(x=temp, y=cond))
 p + geom_point() + 
   geom_ribbon(data=new.data, aes(y=fit, ymin=ymin, ymax=ymax), alpha=0.5) + 
   geom_line(data=new.data, aes(y=fit)) + 
-  labs(x="tenperatua", y="lehioak kondentsatzeko probabilitatea")+theme_bw()
+  labs(x="tenperatura", y="lehioak kondentsatzeko probabilitatea")+theme_bw()
 
 
 
