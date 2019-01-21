@@ -94,7 +94,7 @@ success_msg("Oso ondo, gogoratu R karratua ere begiratu behar dela efektuaren ta
 
 ---
 
-## Insert exercise title here
+## f* work!
 
 ```yaml
 type: VideoExercise
