@@ -8,7 +8,7 @@ description: 'jarraitzen dugu testaren testa eiten, eh!'
 ```yaml
 type: NormalExercise
 key: 39dfbc9a1c
-xp: 1770
+xp: 100
 ```
 
 Badirudi beraz errenta pobreetako bilbo auzoko gizonak bizi itxaropen gutxiago daukatela, ze putada pobrea izatea! Atera kontuak orain eta erabaki joera hori esanguratsua den erregresio zuzen bat eginez.
@@ -52,7 +52,7 @@ success_msg("errezegia, ezta?!")
 ```yaml
 type: MultipleChoiceExercise
 key: 59c9e7daa2
-xp: 567
+xp: 50
 ```
 
 Erabili kontsola `summary(bizi.eredua)` emaitzak berriro ikusteko. Figura eta emaitzak ikusita zein da erabakia?
