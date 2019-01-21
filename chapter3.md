@@ -73,7 +73,7 @@ bilbo.data <- read.csv(url("https://assets.datacamp.com/production/repositories/
 library(ggplot2)
 ggplot(bilbo.data, aes(x=errenta,y=gizon.bizi))+
   geom_point() + stat_smooth(method="lm",se=FALSE,col="red") +theme_bw()
-  labs(y = "bizi itxaropena",x="errenta maila")
+  +labs(y = "bizi itxaropena",x="errenta maila")
 bizi.eredua<-lm(gizon.bizi~errenta,data=bilbo.data)
 summary(bizi.eredua)
 ```
