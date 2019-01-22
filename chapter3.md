@@ -3,6 +3,19 @@ title: erregresioa
 description: 'jarraitzen dugu testaren testa eiten, eh!'
 ---
 
+## f* work please!
+
+```yaml
+type: VideoExercise
+key: 2cde473db3
+xp: 50
+```
+
+`@projector_key`
+02d38ad53fc59e6ab2a127e1731e07f3
+
+---
+
 ## erregresioa pioa pioa pioa
 
 ```yaml
@@ -91,16 +104,3 @@ test_mc(correct = 2, feedback_msgs = c(msg1,msg2,msg3,msg4,msg5))
 # Final message the student will see upon completing the exercise
 success_msg("Oso ondo, gogoratu R karratua ere begiratu behar dela efektuaren tamaina erabakitzeko")
 ```
-
----
-
-## f* work please!
-
-```yaml
-type: VideoExercise
-key: 2cde473db3
-xp: 50
-```
-
-`@projector_key`
-02d38ad53fc59e6ab2a127e1731e07f3
