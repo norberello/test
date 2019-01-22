@@ -31,22 +31,22 @@ Begiratu goiko diagrama, zer da?
 ez da hodei diagrama bat
 
 `@possible_answers`
-- Kutxa diagrama
-- hodei diagrama
-- Marra diagrama
-- [Histograma]
+1. Bilbo mola mola mola!
+2. Bilboko auzuneko errentak eragin esanguratsua dauka pertsonen bizi itxaropenean
+3. Bilboko auzuneko errentak eragin esanguratsurik ez dauka pertsonen bizi itxaropenean
+4. Biblo ez du molatzen
 
 `@feedback`
 #https://www.r-project.org/conferences/useR-2015/presentations/245.pdf
-msg1 = "ez!"
-msg2 = "hum, hurbil zaude"
-msg3 = "marrak bai, baina ez da hori"
-msg4 = "bai, baina ez dago feedback hemen"
+msg1 = "beharbada, baina hori ez da bilatzen dudan erantzuna"
+msg2 = "bai bai bai"
+msg3 = "ez, saiatu berriz"
+msg4 = "beharbada, baina horrek ez du zerikusirik galderarekin"
 
-test_mc(correct = 4, feedback_msgs = c(msg1,msg2,msg3,msg4))
+test_mc(correct = 2, feedback_msgs = c(msg1,msg2,msg3,msg4))
 
 # Final message the student will see upon completing the exercise
-success_msg("resuper!")
+success_msg("Oso ondo, gogoratu R karratua ere begiratu behar dela efektuaren tamaina erabakitzeko")
 
 ---
 
