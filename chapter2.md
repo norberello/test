@@ -40,7 +40,7 @@ ez da hodei diagrama bat
 #https://www.r-project.org/conferences/useR-2015/presentations/245.pdf
 #doing something wrong cause there's no feedback here
 msg1 = "izen polita, baina ez"
-msg2 = "izen polita gero!"
+msg2 = "superb!"
 msg3 = "ez, saiatu berriz"
 msg4 = "zoritxarrez hori ez da erantzuna"
 
