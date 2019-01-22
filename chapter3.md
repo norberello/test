@@ -104,3 +104,16 @@ test_mc(correct = 2, feedback_msgs = c(msg1,msg2,msg3,msg4,msg5))
 # Final message the student will see upon completing the exercise
 success_msg("Oso ondo, gogoratu R karratua ere begiratu behar dela efektuaren tamaina erabakitzeko")
 ```
+
+---
+
+## tunbaqtunbatetxingaus
+
+```yaml
+type: VideoExercise
+key: 4a26a5c78a
+xp: 50
+```
+
+`@projector_key`
+1bcb5fd582fb0984c43a39eada44b3e2
