@@ -34,7 +34,7 @@ ez da hodei diagrama bat
 - Kutxa diagrama
 - hodei diagrama
 - Marra diagrama
-- Histograma
+(- Histograma)
 
 `@feedback`
 #https://www.r-project.org/conferences/useR-2015/presentations/245.pdf
