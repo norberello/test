@@ -31,17 +31,17 @@ Begiratu goiko diagrama, zer da?
 ez da hodei diagrama bat
 
 `@possible_answers`
-1. Bilbo mola mola mola!
-2. Bilboko auzuneko errentak eragin esanguratsua dauka pertsonen bizi itxaropenean
-3. Bilboko auzuneko errentak eragin esanguratsurik ez dauka pertsonen bizi itxaropenean
-4. Biblo ez du molatzen
+1. Makailaua
+2. Histograma
+3. Barrabarra
+4. XY barra
 
 `@feedback`
 #https://www.r-project.org/conferences/useR-2015/presentations/245.pdf
-msg1 = "beharbada, baina hori ez da bilatzen dudan erantzuna"
+msg1 = "izen polita, baina ez"
 msg2 = "bai bai bai"
 msg3 = "ez, saiatu berriz"
-msg4 = "beharbada, baina horrek ez du zerikusirik galderarekin"
+msg4 = "zoritxarrez hori ez da erantzuna"
 
 test_mc(correct = 2, feedback_msgs = c(msg1,msg2,msg3,msg4))
 
