@@ -48,7 +48,7 @@ test_mc(correct = 2, feedback_msgs = c(msg1,msg2,msg3,msg4))
 
 # Final message the student will see upon completing the exercise
 #but doing something not good
-success_msg("Oso ondo, gogoratu R karratua ere begiratu behar dela efektuaren tamaina erabakitzeko")
+success_msg("Oso ondo, marren luzerak maiztasuna adierazten dute")
 
 ---
 
