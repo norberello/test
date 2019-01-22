@@ -32,7 +32,7 @@ ez da hodei diagrama bat
 
 `@possible_answers`
 1. Makailaua
-2. Histograma
+2. [Histograma]
 3. Barrabarra
 4. XY barra
 
