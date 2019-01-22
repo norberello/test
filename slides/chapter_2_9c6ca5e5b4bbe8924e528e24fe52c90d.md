@@ -12,12 +12,32 @@ key: "aaacdf95ae"
 
 `@lower_third`
 
-name: peterpoter![](https://assets.datacamp.com/production/repositories/2196/datasets/918b01868caa863c9214ad932e381acde170b591/delitu%20plot%20wide.jpeg)
+name: peterpoter!
 title: superflower
 
 
 `@script`
 here I will write the script
+
+
+---
+## Insert title here...
+
+```yaml
+type: "TwoColumns"
+key: "7571277055"
+```
+
+`@part1`
+[](https://assets.datacamp.com/production/repositories/2196/datasets/918b01868caa863c9214ad932e381acde170b591/delitu%20plot%20wide.jpeg)
+
+
+`@part2`
+hi
+
+
+`@script`
+tarariri
 
 
 ---
