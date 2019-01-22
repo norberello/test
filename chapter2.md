@@ -38,6 +38,7 @@ ez da hodei diagrama bat
 
 `@feedback`
 #https://www.r-project.org/conferences/useR-2015/presentations/245.pdf
+#doing something wrong cause there's no feedback here
 msg1 = "izen polita, baina ez"
 msg3 = "ez, saiatu berriz"
 msg4 = "zoritxarrez hori ez da erantzuna"
@@ -45,6 +46,7 @@ msg4 = "zoritxarrez hori ez da erantzuna"
 test_mc(correct = 2, feedback_msgs = c(msg1,msg3,msg4))
 
 # Final message the student will see upon completing the exercise
+#but doing something not good
 success_msg("Oso ondo, gogoratu R karratua ere begiratu behar dela efektuaren tamaina erabakitzeko")
 
 ---
