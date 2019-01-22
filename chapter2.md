@@ -38,15 +38,15 @@ ez da hodei diagrama bat
 
 `@feedback`
 #https://www.r-project.org/conferences/useR-2015/presentations/245.pdf
-msg1 = "hurbil, baino ez"
-msg2 = "hum, ez, non dakustazu hodeia?"
-msg3 = "bai marrak daude, baina hori ez da bilatzen dudan erantzuna"
-msg4 = "yes!"
+msg1 = "bai, halaxe da, batazbestekoa aldagai jarrai baten erdia errepesenta dezake"
+msg2 = "hum, hurbil zaude, baina desbiderapen tipikoa sakabanatze neurri bat da"
+msg3 = "ez, estatistiko batek ez du zentro joerako informaziorik ematen"
+msg4 = "hurbil, baina ez da hori, saiatu berriro"
 
 test_mc(correct = 4, feedback_msgs = c(msg1,msg2,msg3,msg4))
 
 # Final message the student will see upon completing the exercise
-success_msg("Oso zuhur Marilur!")
+success_msg("Oso ondo gabilondo!")
 
 ---
 
