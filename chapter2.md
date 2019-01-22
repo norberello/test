@@ -39,11 +39,10 @@ ez da hodei diagrama bat
 `@feedback`
 #https://www.r-project.org/conferences/useR-2015/presentations/245.pdf
 msg1 = "izen polita, baina ez"
-msg2 = "bai bai bai"
 msg3 = "ez, saiatu berriz"
 msg4 = "zoritxarrez hori ez da erantzuna"
 
-test_mc(correct = 2, feedback_msgs = c(msg1,msg2,msg3,msg4))
+test_mc(correct = 2, feedback_msgs = c(msg1,msg3,msg4))
 
 # Final message the student will see upon completing the exercise
 success_msg("Oso ondo, gogoratu R karratua ere begiratu behar dela efektuaren tamaina erabakitzeko")
